@@ -25,8 +25,8 @@ case study/
 │   ├── CM_sources.json                         # Carbon Mapper sources (GeoJSON)
 │   ├── CM_plumes.csv                           # Carbon Mapper plume detections
 │   ├── CM_emission_events.csv                  # Carbon Mapper emission events
-│   ├── Global_Fuel_Exploitation_Inventory_v3_2020_Oil_All.nc   # GFEI v3.0 oil sector emissions (2020)
-│   ├── Global_Fuel_Exploitation_Inventory_v3_2020_Gas_All.nc   # GFEI v3.0 gas sector emissions (2020)
+│   ├── Global_Fuel_Exploitation_Inventory_v3_2020_Oil_All.nc   # download; see repository README
+│   ├── Global_Fuel_Exploitation_Inventory_v3_2020_Gas_All.nc   # download; see repository README
 │   ├── Global_Fuel_Exploitation_Inventory_Oil_All_rsd.nc       # GFEI v1.0 oil relative standard deviation
 │   ├── Global_Fuel_Exploitation_Inventory_Gas_All_rsd.nc       # GFEI v1.0 gas relative standard deviation
 │   ├── cs1_gfei.py                                             # loads the four files, oil+gas totals and uncertainty
@@ -105,7 +105,9 @@ This case study demonstrates the analysis of real-world satellite data from Carb
 #### Global Fuel Exploitation Inventory (GFEI)
 - **`Global_Fuel_Exploitation_Inventory_v3_2020_Oil_All.nc`** and **`..._Gas_All.nc`**: GFEI v3.0 (2020) oil and gas sector
   emissions (IPCC 1B2; Scarpelli et al., 2025), Mg a⁻¹ km⁻² on the 0.1° grid, converted to kg per cell with the `area`
-  variable. The comparison uses their sum; the total-fuel-exploitation product is no longer used.
+  variable. These two files are not in the repository. Download them from
+  [doi:10.7910/DVN/HH4EUM](https://doi.org/10.7910/DVN/HH4EUM) into this folder (direct links are in the repository README).
+  The comparison uses their sum; the total-fuel-exploitation product is no longer used.
 - **`Global_Fuel_Exploitation_Inventory_Oil_All_rsd.nc`** and **`..._Gas_All_rsd.nc`**: per-cell relative standard
   deviations of the GFEI v1.0 (2016) sector inventories (Scarpelli et al., 2020). GFEI v3.0 ships no uncertainty layer, so
   these are applied to the v3.0 sector emissions (`cs1_gfei.py`, emission-weighted over cells and sectors).

@@ -212,6 +212,17 @@ The repository includes two case studies demonstrating different use cases:
 
 See `case study/README.md` for detailed documentation.
 
+## NetCDF data
+
+Two GFEI v3.0 (2020) inventory files are too large to store in this repository. Download them from the Harvard Dataverse release of the Global Fuel Exploitation Inventory (Scarpelli et al., 2025), [doi:10.7910/DVN/HH4EUM](https://doi.org/10.7910/DVN/HH4EUM), and save them in `case study/` under these names:
+
+| File | Direct download |
+| --- | --- |
+| `case study/Global_Fuel_Exploitation_Inventory_v3_2020_Oil_All.nc` | https://dataverse.harvard.edu/api/access/datafile/11828683 |
+| `case study/Global_Fuel_Exploitation_Inventory_v3_2020_Gas_All.nc` | https://dataverse.harvard.edu/api/access/datafile/11828512 |
+
+`cs1_gfei.py` reads those paths when comparing Case Study 1 with the inventory. The smaller relative-standard-deviation files and `EAMEET_v1/weather_permian.nc` are already in the repository.
+
 ## Data Requirements
 
 ### Input Data Format
