@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="640" viewBox="0 0 1000 640" font-family="Times New Roman, Times, serif" font-size="15" fill="#111">
+  <defs>
+    <pattern id="hatch" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#555" stroke-width="1.6"/>
+    </pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#111"/>
+    </marker>
+    <marker id="arrowg" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#666"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="640" fill="#fff"/>
+
+  <!-- ================= Panel (a) ================= -->
+  <text x="40" y="34" font-size="17" font-weight="bold">(a) Temporal bound conditional on the detections</text>
+  <text x="500" y="62" text-anchor="middle" font-size="15">
+    Every realization satisfies
+    <tspan font-style="italic">t</tspan><tspan baseline-shift="sub" font-size="11">PND</tspan> ≤ <tspan font-style="italic">t</tspan><tspan baseline-shift="sub" font-size="11">start</tspan> ≤ <tspan font-style="italic">t</tspan><tspan baseline-shift="sub" font-size="11">first</tspan>
+    &#160;&#160;and&#160;&#160;
+    <tspan font-style="italic">t</tspan><tspan baseline-shift="sub" font-size="11">last</tspan> ≤ <tspan font-style="italic">t</tspan><tspan baseline-shift="sub" font-size="11">end</tspan> ≤ <tspan font-style="italic">t</tspan><tspan baseline-shift="sub" font-size="11">SND</tspan>
+  </text>
+
+  <!-- density curves -->
+  <!-- a: density ∝ exp[-(λoff-λon) a], decreasing away from t_first toward t_PND -->
+  <path d="M500,124 C470,127 440,138 410,146 C380,152 340,157 300,158" fill="none" stroke="#333" stroke-width="1.6"/>
+  <line x1="300" y1="158" x2="500" y2="158" stroke="#999" stroke-width="0.8" stroke-dasharray="3,3"/>
+  <text x="300" y="92" font-size="13">density of <tspan font-style="italic">a</tspan> ∝ exp[−(<tspan font-style="italic">λ</tspan><tspan baseline-shift="sub" font-size="10">off</tspan> − <tspan font-style="italic">λ</tspan><tspan baseline-shift="sub" font-size="10">on</tspan>) <tspan font-style="italic">a</tspan>]</text>
+  <text x="300" y="108" font-size="12" fill="#444">onset hazard × survival until first detection</text>
+  <!-- b: Exp(λoff) decreasing away from t_last toward t_SND -->
+  <path d="M700,124 C725,128 750,140 790,149 C830,155 860,158 880,158" fill="none" stroke="#333" stroke-width="1.6"/>
+  <line x1="700" y1="158" x2="880" y2="158" stroke="#999" stroke-width="0.8" stroke-dasharray="3,3"/>
+  <text x="705" y="92" font-size="13"><tspan font-style="italic">b</tspan> ~ Exp(<tspan font-style="italic">λ</tspan><tspan baseline-shift="sub" font-size="10">off</tspan>), truncated at <tspan font-style="italic">t</tspan><tspan baseline-shift="sub" font-size="10">SND</tspan></text>
+  <text x="705" y="108" font-size="12" fill="#444">repair hazard only (memoryless)</text>
+
+  <!-- allowed range (hard bounds) -->
+  <rect x="300" y="178" width="580" height="30" fill="none" stroke="#777" stroke-width="1" stroke-dasharray="6,4"/>
+  <text x="304" y="174" font-size="12" fill="#555">allowed range between the bracketing null detections</text>
+
+  <!-- emission bar: extension a (hatched), detection span (solid), extension b (hatched) -->
+  <rect x="430" y="182" width="70" height="22" fill="url(#hatch)" stroke="#333" stroke-width="1"/>
+  <rect x="500" y="182" width="200" height="22" fill="#2b2b2b" stroke="#111" stroke-width="1"/>
+  <rect x="700" y="182" width="60" height="22" fill="url(#hatch)" stroke="#333" stroke-width="1"/>
+  <text x="600" y="197" text-anchor="middle" font-size="12" fill="#fff">detection span (always included)</text>
+  <text x="465" y="197" text-anchor="middle" font-size="13" font-style="italic">a</text>
+  <text x="730" y="197" text-anchor="middle" font-size="13" font-style="italic">b</text>
+  <!-- start / end labels -->
+  <line x1="430" y1="204" x2="430" y2="236" stroke="#111" stroke-width="1"/>
+  <text x="430" y="250" text-anchor="middle" font-size="13"><tspan font-style="italic">t</tspan><tspan baseline-shift="sub" font-size="10">start</tspan> = <tspan font-style="italic">t</tspan><tspan baseline-shift="sub" font-size="10">first</tspan> − <tspan font-style="italic">a</tspan></text>
+  <line x1="760" y1="204" x2="760" y2="236" stroke="#111" stroke-width="1"/>
+  <text x="760" y="250" text-anchor="middle" font-size="13"><tspan font-style="italic">t</tspan><tspan baseline-shift="sub" font-size="10">end</tspan> = <tspan font-style="italic">t</tspan><tspan baseline-shift="sub" font-size="10">last</tspan> + <tspan font-style="italic">b</tspan></text>
+
+  <!-- time axis -->
+  <line x1="80" y1="290" x2="940" y2="290" stroke="#111" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="945" y="294" font-size="13">time</text>
+  <!-- null detections (open circles) -->
+  <circle cx="300" cy="290" r="7" fill="#fff" stroke="#111" stroke-width="1.8"/>
+  <circle cx="880" cy="290" r="7" fill="#fff" stroke="#111" stroke-width="1.8" stroke-dasharray="3,2"/>
+  <!-- positive detections (filled diamonds) -->
+  <polygon points="500,281 509,290 500,299 491,290" fill="#111"/>
+  <polygon points="600,281 609,290 600,299 591,290" fill="#111"/>
+  <polygon points="700,281 709,290 700,299 691,290" fill="#111"/>
+  <!-- tick labels -->
+  <text x="300" y="316" text-anchor="middle"><tspan font-style="italic">t</tspan><tspan baseline-shift="sub" font-size="11">PND</tspan></text>
+  <text x="300" y="332" text-anchor="middle" font-size="12" fill="#444">preceding null detection</text>
+  <text x="500" y="316" text-anchor="middle"><tspan font-style="italic">t</tspan><tspan baseline-shift="sub" font-size="11">first</tspan></text>
+  <text x="600" y="316" text-anchor="middle" font-size="12" fill="#444">positive detections</text>
+  <text x="700" y="316" text-anchor="middle"><tspan font-style="italic">t</tspan><tspan baseline-shift="sub" font-size="11">last</tspan></text>
+  <text x="880" y="316" text-anchor="middle"><tspan font-style="italic">t</tspan><tspan baseline-shift="sub" font-size="11">SND</tspan></text>
+  <text x="880" y="332" text-anchor="middle" font-size="12" fill="#444">succeeding null detection, or cap</text>
+  <!-- guide lines from bounds to bar -->
+  <line x1="300" y1="208" x2="300" y2="283" stroke="#777" stroke-width="0.8" stroke-dasharray="3,3"/>
+  <line x1="880" y1="208" x2="880" y2="283" stroke="#777" stroke-width="0.8" stroke-dasharray="3,3"/>
+  <line x1="500" y1="204" x2="500" y2="281" stroke="#777" stroke-width="0.8" stroke-dasharray="3,3"/>
+  <line x1="700" y1="204" x2="700" y2="281" stroke="#777" stroke-width="0.8" stroke-dasharray="3,3"/>
+
+  <!-- legend -->
+  <text x="80" y="366" font-size="13">
+    <tspan font-style="italic">D</tspan><tspan baseline-shift="sub" font-size="10">sim</tspan> = <tspan font-style="italic">a</tspan> + (<tspan font-style="italic">t</tspan><tspan baseline-shift="sub" font-size="10">last</tspan> − <tspan font-style="italic">t</tspan><tspan baseline-shift="sub" font-size="10">first</tspan>) + <tspan font-style="italic">b</tspan>;&#160;&#160;
+    <tspan font-style="italic">λ</tspan> = −ln(1 − <tspan font-style="italic">p</tspan>)/24 per hour from the per-day LPR (<tspan font-style="italic">λ</tspan><tspan baseline-shift="sub" font-size="10">on</tspan>) and NRR (<tspan font-style="italic">λ</tspan><tspan baseline-shift="sub" font-size="10">off</tspan>);&#160;&#160;
+    10<tspan baseline-shift="super" font-size="10">5</tspan> iterations → median and 2.5 / 97.5 percentiles
+  </text>
+
+  <!-- ================= Panel (b) ================= -->
+  <text x="40" y="412" font-size="17" font-weight="bold">(b) Null-detection validity (soft bounds)</text>
+
+  <!-- left: fallback chain on a short axis -->
+  <line x1="80" y1="500" x2="560" y2="500" stroke="#111" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="104" y="493" width="14" height="14" fill="#fff" stroke="#111" stroke-width="1.8"/>
+  <circle cx="220" cy="500" r="7" fill="#fff" stroke="#111" stroke-width="1.8"/>
+  <circle cx="350" cy="500" r="7" fill="#fff" stroke="#111" stroke-width="1.8"/>
+  <polygon points="490,491 499,500 490,509 481,500" fill="#111"/>
+  <text x="111" y="528" text-anchor="middle" font-size="12">analysis-window</text>
+  <text x="111" y="542" text-anchor="middle" font-size="12">start (floor)</text>
+  <text x="220" y="528" text-anchor="middle" font-size="12">earlier null</text>
+  <text x="220" y="542" text-anchor="middle" font-size="12">POD<tspan baseline-shift="sub" font-size="9">2</tspan></text>
+  <text x="350" y="528" text-anchor="middle" font-size="12">nearest null</text>
+  <text x="350" y="542" text-anchor="middle" font-size="12">POD<tspan baseline-shift="sub" font-size="9">1</tspan></text>
+  <text x="490" y="528" text-anchor="middle" font-size="12"><tspan font-style="italic">t</tspan><tspan baseline-shift="sub" font-size="10">first</tspan></text>
+
+  <!-- chain arrows (above axis) -->
+  <path d="M482,476 C440,436 390,436 358,476" fill="none" stroke="#111" stroke-width="1.4" marker-end="url(#arrow)"/>
+  <text x="420" y="440" text-anchor="middle" font-size="13" font-weight="bold">①</text>
+  <path d="M342,480 C310,452 260,452 228,480" fill="none" stroke="#666" stroke-width="1.4" stroke-dasharray="5,3" marker-end="url(#arrowg)"/>
+  <text x="285" y="454" text-anchor="middle" font-size="13" font-weight="bold" fill="#444">②</text>
+  <path d="M212,482 C190,462 150,462 120,484" fill="none" stroke="#666" stroke-width="1.4" stroke-dasharray="5,3" marker-end="url(#arrowg)"/>
+  <text x="166" y="462" text-anchor="middle" font-size="13" font-weight="bold" fill="#444">③</text>
+
+  <!-- right: explanatory text -->
+  <text x="600" y="436" font-size="13">① nearest null valid with probability POD<tspan baseline-shift="sub" font-size="9">1</tspan> → bound = <tspan font-style="italic">t</tspan><tspan baseline-shift="sub" font-size="9">PND</tspan></text>
+  <text x="600" y="456" font-size="13">② otherwise (1 − POD<tspan baseline-shift="sub" font-size="9">1</tspan>): next null outward, valid with POD<tspan baseline-shift="sub" font-size="9">2</tspan></text>
+  <text x="600" y="476" font-size="13">③ all nulls missed → hard floor (analysis-window start)</text>
+  <text x="600" y="504" font-size="13">• POD = probability the survey would have detected the emission</text>
+  <text x="614" y="521" font-size="13">at the event’s rate under the observing conditions; POD = 1 → panel (a)</text>
+  <text x="600" y="546" font-size="13">• Same rule for the succeeding bound, with the user cap as ceiling</text>
+  <text x="600" y="571" font-size="13">• Case Study 2: POD = 0.9 for the OGI and flyover null detections</text>
+
+  <!-- footer legend for symbols -->
+  <circle cx="90" cy="612" r="6" fill="#fff" stroke="#111" stroke-width="1.6"/>
+  <text x="104" y="616" font-size="12">null detection</text>
+  <polygon points="215,604 223,612 215,620 207,612" fill="#111"/>
+  <text x="232" y="616" font-size="12">positive detection</text>
+  <rect x="360" y="604" width="40" height="16" fill="#2b2b2b"/>
+  <text x="408" y="616" font-size="12">emission, observed span</text>
+  <rect x="570" y="604" width="40" height="16" fill="url(#hatch)" stroke="#333" stroke-width="1"/>
+  <text x="618" y="616" font-size="12">emission, sampled extension</text>
+</svg>

@@ -20,17 +20,16 @@ case study/
 ├── Notebooks/
 │   ├── Case_study_No1.ipynb                    # Case Study 1: Carbon Mapper data analysis
 │   ├── Results_compare_for_case_study_No1.ipynb # Case Study 1: Results comparison with GFEI
-│   └── Results_for_case_study_No2.ipynb        # Case Study 2: Results visualization
+│   ├── cs1_joint_ensemble.py                   # Case Study 1: joint Monte Carlo ensemble engine + dependence tests
 ├── Input Data/
-│   ├── Synthetic_multiscale_emissions_observations.csv  # Synthetic emission observations
 │   ├── CM_sources.json                         # Carbon Mapper sources (GeoJSON)
 │   ├── CM_plumes.csv                           # Carbon Mapper plume detections
 │   ├── CM_emission_events.csv                  # Carbon Mapper emission events
-│   ├── sample_leak_rate.csv                    # Component-level leak rates
-│   ├── weather_permian.nc                      # Weather data (NetCDF format)
-│   ├── Global_Fuel_Exploitation_Inventory_v3_2020_Total_Fuel_Exploitation.nc  # GFEI inventory
-│   ├── Global_Fuel_Exploitation_Inventory_Total_Fuel_Exploitation_gsd.nc      # GFEI gridded data
-│   ├── Global_Fuel_Exploitation_Inventory_Total_Fuel_Exploitation_rsd.nc     # GFEI regional data
+│   ├── Global_Fuel_Exploitation_Inventory_v3_2020_Oil_All.nc   # GFEI v3.0 oil sector emissions (2020)
+│   ├── Global_Fuel_Exploitation_Inventory_v3_2020_Gas_All.nc   # GFEI v3.0 gas sector emissions (2020)
+│   ├── Global_Fuel_Exploitation_Inventory_Oil_All_rsd.nc       # GFEI v1.0 oil relative standard deviation
+│   ├── Global_Fuel_Exploitation_Inventory_Gas_All_rsd.nc       # GFEI v1.0 gas relative standard deviation
+│   ├── cs1_gfei.py                                             # loads the four files, oil+gas totals and uncertainty
 │   └── shapefiles/                             # Geographic boundary files
 │       ├── Boundary_PermianBasin_StudyArea_NAD27.*  # Permian Basin study area
 │       └── Boundary_State_NAD27.*              # State boundaries
@@ -60,6 +59,15 @@ This case study demonstrates the analysis of real-world satellite data from Carb
   - `CM_emission_events.csv` - Pre-processed emission events
 - **Output**: Emission events with resolved (RE) and partially resolved (PRE) classifications
 
+#### `cs1_joint_ensemble.py`
+- **Purpose**: Joint Monte Carlo ensemble of the Case Study 1 cohort total (imported by `Case_study_No1.ipynb`). In every
+  iteration the plume quantification errors (optionally shared within platform-day and/or by a platform-wide bias), the
+  event rates, optionally detection-conditioned event durations, the bootstrap-refit Weibull UE distributions, each
+  source's occupancy and the renewal UE draws are sampled before PRE + UE are summed over all sources. The central
+  estimate and 95% interval are percentiles of the ensemble of totals (never sums of component medians or bounds).
+- **Dependence tests**: `run_dependence_tests()` writes `cs1_outputs/cs1_dependence_tests.{csv,md}` (variants A-J).
+- **Run**: `python cs1_joint_ensemble.py [n_outer_headline] [n_outer_tests]` from this folder.
+
 #### `Results_compare_for_case_study_No1.ipynb`
 - **Purpose**: Compares emission estimates with bottom-up inventory (GFEI)
 - **Key Steps**:
@@ -70,7 +78,7 @@ This case study demonstrates the analysis of real-world satellite data from Carb
   5. Generates comparison plots between top-down (event-based) and bottom-up (inventory) estimates
 - **Input Files**:
   - `CM_emission_events.csv` - Emission events from Case Study 1
-  - `Global_Fuel_Exploitation_Inventory_v3_2020_Total_Fuel_Exploitation.nc` - GFEI inventory
+  - GFEI v3.0 oil and gas sector files and GFEI v1.0 rsd files (see Input Data Files)
   - `shapefiles/Boundary_PermianBasin_StudyArea_NAD27.shp` - Study area boundary
   - `shapefiles/Boundary_State_NAD27.shp` - State boundaries
 - **Output**: Comparison visualizations and analysis
@@ -95,15 +103,12 @@ This case study demonstrates the analysis of real-world satellite data from Carb
 - **`CM_emission_events.csv`**: Pre-processed emission events derived from Carbon Mapper data
 
 #### Global Fuel Exploitation Inventory (GFEI)
-- **`Global_Fuel_Exploitation_Inventory_v3_2020_Total_Fuel_Exploitation.nc`**: Main GFEI inventory file
-  - Annual methane emissions from total fuel exploitation
-  - Units: Mg a⁻¹ km⁻² (converted to kg a⁻¹ in analysis)
-  - Spatial resolution: 0.1° × 0.1°
-  - Coverage: Global
-
-- **`Global_Fuel_Exploitation_Inventory_Total_Fuel_Exploitation_gsd.nc`**: Gridded spatial distribution
-
-- **`Global_Fuel_Exploitation_Inventory_Total_Fuel_Exploitation_rsd.nc`**: Regional spatial distribution
+- **`Global_Fuel_Exploitation_Inventory_v3_2020_Oil_All.nc`** and **`..._Gas_All.nc`**: GFEI v3.0 (2020) oil and gas sector
+  emissions (IPCC 1B2; Scarpelli et al., 2025), Mg a⁻¹ km⁻² on the 0.1° grid, converted to kg per cell with the `area`
+  variable. The comparison uses their sum; the total-fuel-exploitation product is no longer used.
+- **`Global_Fuel_Exploitation_Inventory_Oil_All_rsd.nc`** and **`..._Gas_All_rsd.nc`**: per-cell relative standard
+  deviations of the GFEI v1.0 (2016) sector inventories (Scarpelli et al., 2020). GFEI v3.0 ships no uncertainty layer, so
+  these are applied to the v3.0 sector emissions (`cs1_gfei.py`, emission-weighted over cells and sectors).
 
 #### Geographic Data
 - **`shapefiles/`**: Contains shapefiles for geographic boundaries
@@ -117,26 +122,12 @@ This case study demonstrates the emission event framework using synthetic multi-
 
 ### Notebooks
 
-#### `Results_for_case_study_No2.ipynb`
-- **Purpose**: Visualizes and analyzes results from Case Study 2
-- **Key Steps**:
-  1. Loads emission events from Case Study 2
-  2. Separates resolved events (RE) and partially resolved events (PRE)
-  3. Creates scatter plots of rates vs. durations with error bars
-  4. Analyzes event characteristics and uncertainties
-- **Input Files**:
-  - `emission_events_case_study_2.csv` - Emission events with classifications
-- **Output**: Visualization plots (e.g., `event_rates_scatter.png`)
+#### `Case_study_No2_redone.ipynb`
+- **Purpose**: Builds the Site A events from `Data_from_case_study_2.xlsx`, infers the flyover PRE duration, runs the Type 1 and Type 2 UE simulations and writes `cs2_outputs/` (results summary, Figure 6 and 7 panels).
 
 ### Input Data Files
 
-- **`Synthetic_multiscale_emissions_observations.csv`**: Synthetic emission observations with:
-  - Observation IDs
-  - Site IDs
-  - Observation times and time ranges (startTime, endTime)
-  - Emission rates (kg/hr)
-  - Measurement technology (e.g., CMS - Continuous Monitoring System)
-  - Uncertainty values
+- **`Data_from_case_study_2.xlsx`**: Synthetic multi-scale observations of Site A (CMS alarms, flyover and OGI surveys, operational venting records; SI Tables S3–S6), read by `Case_study_No2_redone.ipynb`.
 
 ### Output Data Files
 
@@ -157,18 +148,7 @@ This case study demonstrates the emission event framework using synthetic multi-
 
 ## Shared Data Files
 
-### Component-Level Leak Data
-- **`sample_leak_rate.csv`**: Component-level leak rates from datasets organized by Rutherford et al., 2021
-  - Used for simulating emissions below detection limits
-  - Contains leak rates in g/s (converted to kg/hr in analysis)
-  - Used in "Simulate Below Detection Limit" approach
-
-### Weather Data
-- **`weather_permian.nc`**: Weather data for Permian Basin downloaded from ERA5
-  - NetCDF format
-  - Contains wind speed components (u10, v10)
-  - Used for wind-aware probability of detection calculations
-  - Required for technology-specific POD/MDL functions that consider wind conditions
+The component-level leak-rate sample (`sample_leak_rate.csv`, Rutherford et al., 2021; g/s, converted to kg/h by the toolkit) and the ERA5 wind file (`weather_permian.nc`) live in `../EAMEET_v1/` and are loaded from there by the toolkit; the case-study folder no longer keeps copies.
 
 ## Event Classifications
 
@@ -190,7 +170,7 @@ The case studies classify emission events into three categories:
 
 ## Dependencies
 
-The notebooks require the following Python packages (see `../EAEET_v1/requirements.txt`):
+The notebooks require the following Python packages (see `../EAMEET_v1/requirements.txt`):
 - `pandas` - Data manipulation
 - `numpy` - Numerical computing
 - `scipy` - Statistical distributions
@@ -202,7 +182,7 @@ The notebooks require the following Python packages (see `../EAEET_v1/requiremen
 - `rasterio` - Geospatial raster I/O
 - `shapely` - Geometric operations
 
-Additionally, the notebooks import modules from the main EAEET application:
+Additionally, the notebooks import modules from the main EAMEET application:
 - `simulations` - Simulation functions
 - `utils` - Utility functions
 - `emission_event_converter` - Event conversion logic
@@ -216,15 +196,15 @@ Additionally, the notebooks import modules from the main EAEET application:
 
 2. **Ensure dependencies are installed**:
    ```bash
-   cd ../EAEET_v1
+   cd ../EAMEET_v1
    pip install -r requirements.txt
    ```
 
 3. **Run notebooks in order**:
    - For Case Study 1: Start with `Case_study_No1.ipynb`, then `Results_compare_for_case_study_No1.ipynb`
-   - For Case Study 2: Use `Results_for_case_study_No2.ipynb` (assumes events have been created)
+   - For Case Study 2: Use `Case_study_No2_redone.ipynb` (events, duration model, UE simulations and Figure 7)
 
-4. **Note**: Some notebooks may reference data files that need to be generated by previous steps or the main EAEET application.
+4. **Note**: Some notebooks may reference data files that need to be generated by previous steps or the main EAMEET application.
 
 ## Key Results
 

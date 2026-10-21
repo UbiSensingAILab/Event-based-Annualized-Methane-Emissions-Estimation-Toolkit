@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="1080" viewBox="0 0 1700 1080" font-family="Times New Roman, Times, serif" font-size="14" fill="#111">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 z" fill="#111"/></marker></defs>
+<rect width="1700" height="1080" fill="#fff"/>
+<text x="30" y="34" font-size="15" font-weight="bold" text-anchor="start">(a) Monte Carlo loop over the time budget of the monitored period</text>
+<rect x="155.0" y="60.0" width="90" height="30" rx="15.0" fill="#4a4ad6" stroke="#222" stroke-width="1.2"/>
+<text x="200" y="75.0" text-anchor="middle" dominant-baseline="middle" font-size="14" fill="#fff">start</text>
+<rect x="75.0" y="110.0" width="250" height="40" rx="6" fill="#cfe6ff" stroke="#2b6cb0" stroke-width="1.5"/>
+<text x="200" y="130.0" text-anchor="middle" dominant-baseline="middle" font-size="14" fill="#111">Set number of iterations MC; mc = 1</text>
+<rect x="35.0" y="169.0" width="330" height="92" rx="6" fill="#eeeeee" stroke="#555" stroke-width="1.5"/>
+<text x="200" y="182.8" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">Build the time budget:</text>
+<text x="200" y="198.9" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">hours with at least one observing technology</text>
+<text x="200" y="215.0" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">(coverage schedules: CMS uptime, survey instants;</text>
+<text x="200" y="231.1" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">no schedule = whole monitored period)</text>
+<text x="200" y="247.2" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">minus union of observed RE/PRE hours → gap segments</text>
+<rect x="60.0" y="280.0" width="280" height="40" rx="6" fill="#cfe6ff" stroke="#2b6cb0" stroke-width="1.5"/>
+<text x="200" y="300.0" text-anchor="middle" dominant-baseline="middle" font-size="14" fill="#111"><tspan font-style="italic">E</tspan><tspan baseline-shift="sub" font-size="10">UE</tspan> = 0;  <tspan font-style="italic">t</tspan> = start of the first gap</text>
+<rect x="50.0" y="349.0" width="300" height="52" rx="6" fill="#c9efc9" stroke="#2f8f2f" stroke-width="1.5"/>
+<text x="200" y="366.9" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">Sample component-scale emission rate</text>
+<text x="200" y="383.1" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">and component count → <tspan font-style="italic">Q</tspan> (equipment/site scale)</text>
+<rect x="50.0" y="429.0" width="300" height="52" rx="6" fill="#c9efc9" stroke="#2f8f2f" stroke-width="1.5"/>
+<text x="200" y="446.9" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">Sample duration <tspan font-style="italic">D</tspan> from observed durations;</text>
+<text x="200" y="463.1" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">clip to the end of the current gap</text>
+<rect x="50.0" y="509.0" width="300" height="52" rx="6" fill="#c9efc9" stroke="#2f8f2f" stroke-width="1.5"/>
+<text x="200" y="526.9" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">Wind speed <tspan font-style="italic">u</tspan> at <tspan font-style="italic">t</tspan>: time-matched series,</text>
+<text x="200" y="543.1" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">or one random draw from the wind sample</text>
+<polygon points="200,595.0 350.0,650 200,705.0 50.0,650" fill="#cfe6ff" stroke="#2b6cb0" stroke-width="1.5"/>
+<text x="200" y="625.8" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">Any technology whose</text>
+<text x="200" y="641.9" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">coverage overlaps [<tspan font-style="italic">t</tspan>, <tspan font-style="italic">t</tspan>+<tspan font-style="italic">D</tspan>)?</text>
+<text x="200" y="658.1" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">(CMS: uptime interval overlaps;</text>
+<text x="200" y="674.2" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">survey: instant inside the event)</text>
+<rect x="75.0" y="754.0" width="250" height="52" rx="6" fill="#eeeeee" stroke="#555" stroke-width="1.5"/>
+<text x="200" y="771.9" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">No technology could have</text>
+<text x="200" y="788.1" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">observed it: unresolved</text>
+<rect x="445.0" y="624.0" width="230" height="52" rx="6" fill="#ffe9a3" stroke="#b58900" stroke-width="1.5"/>
+<text x="560" y="641.3" text-anchor="middle" dominant-baseline="middle" font-size="14" fill="#111">Technology-specific</text>
+<text x="560" y="658.7" text-anchor="middle" dominant-baseline="middle" font-size="14" fill="#111">POD check (panel b)</text>
+<polygon points="560,735.0 675.0,780 560,825.0 445.0,780" fill="#cfe6ff" stroke="#2b6cb0" stroke-width="1.5"/>
+<text x="560" y="771.9" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">Missed by all</text>
+<text x="560" y="788.1" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">covering technologies?</text>
+<rect x="445.0" y="878.0" width="230" height="44" rx="6" fill="#cfe6ff" stroke="#2b6cb0" stroke-width="1.5"/>
+<text x="560" y="900.0" text-anchor="middle" dominant-baseline="middle" font-size="14" fill="#111"><tspan font-style="italic">E</tspan><tspan baseline-shift="sub" font-size="10">UE</tspan> += <tspan font-style="italic">Q</tspan> × <tspan font-style="italic">D</tspan></text>
+<rect x="410.0" y="959.0" width="300" height="52" rx="6" fill="#cfe6ff" stroke="#2b6cb0" stroke-width="1.5"/>
+<text x="560" y="976.3" text-anchor="middle" dominant-baseline="middle" font-size="14" fill="#111"><tspan font-style="italic">t</tspan> += <tspan font-style="italic">D</tspan>  (move to the next gap</text>
+<text x="560" y="993.7" text-anchor="middle" dominant-baseline="middle" font-size="14" fill="#111">when the current one is exhausted)</text>
+<polygon points="880,940.0 990.0,985 880,1030.0 770.0,985" fill="#cfe6ff" stroke="#2b6cb0" stroke-width="1.5"/>
+<text x="880" y="976.9" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">Time budget</text>
+<text x="880" y="993.1" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">exhausted?</text>
+<rect x="765.0" y="838.0" width="230" height="44" rx="6" fill="#cfe6ff" stroke="#2b6cb0" stroke-width="1.5"/>
+<text x="880" y="860.0" text-anchor="middle" dominant-baseline="middle" font-size="14" fill="#111">Save <tspan font-style="italic">E</tspan><tspan baseline-shift="sub" font-size="10">UE</tspan>;  mc = mc + 1</text>
+<polygon points="880,700.0 970.0,740 880,780.0 790.0,740" fill="#cfe6ff" stroke="#2b6cb0" stroke-width="1.5"/>
+<text x="880" y="740.0" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">mc = MC?</text>
+<rect x="750.0" y="594.0" width="260" height="52" rx="6" fill="#cfe6ff" stroke="#2b6cb0" stroke-width="1.5"/>
+<text x="880" y="611.3" text-anchor="middle" dominant-baseline="middle" font-size="14" fill="#111">Median and 2.5th / 97.5th percentiles</text>
+<text x="880" y="628.7" text-anchor="middle" dominant-baseline="middle" font-size="14" fill="#111">of the MC values of <tspan font-style="italic">E</tspan><tspan baseline-shift="sub" font-size="10">UE</tspan></text>
+<rect x="835.0" y="515.0" width="90" height="30" rx="15.0" fill="#4a4ad6" stroke="#222" stroke-width="1.2"/>
+<text x="880" y="530.0" text-anchor="middle" dominant-baseline="middle" font-size="14" fill="#fff">end</text>
+<path d="M200,90 L200,110" fill="none" stroke="#111" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M200,150 L200,169" fill="none" stroke="#111" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M200,261 L200,280" fill="none" stroke="#111" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M200,320 L200,349" fill="none" stroke="#111" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M200,401 L200,429" fill="none" stroke="#111" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M200,481 L200,509" fill="none" stroke="#111" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M200,561 L200,595" fill="none" stroke="#111" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M200,705 L200,754" fill="none" stroke="#111" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="218" y="728" font-size="13" fill="#111" text-anchor="middle" dominant-baseline="middle">No</text>
+<path d="M350,650 L445,650" fill="none" stroke="#111" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="400" y="638" font-size="13" fill="#111" text-anchor="middle" dominant-baseline="middle">Yes</text>
+<path d="M560,676 L560,735" fill="none" stroke="#111" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M560,825 L560,878" fill="none" stroke="#111" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="580" y="850" font-size="13" fill="#111" text-anchor="middle" dominant-baseline="middle">Yes</text>
+<path d="M200,806 L200,900 L445,900" fill="none" stroke="#111" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M675,780 L760,780 L760,945 L670,945 L670,959" fill="none" stroke="#111" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="752" y="848" font-size="12" text-anchor="end">No: detected, already</text><text x="752" y="863" font-size="12" text-anchor="end">in an RE/PRE; add nothing</text>
+<path d="M560,922 L560,959" fill="none" stroke="#111" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M710,985 L770,985" fill="none" stroke="#111" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M880,1030 L880,1055 L20,1055 L20,375 L50,375" fill="none" stroke="#111" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="898" y="1045" font-size="13" fill="#111" text-anchor="middle" dominant-baseline="middle">No</text>
+<path d="M880,940 L880,882" fill="none" stroke="#111" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="902" y="912" font-size="13" fill="#111" text-anchor="middle" dominant-baseline="middle">Yes</text>
+<path d="M880,838 L880,780" fill="none" stroke="#111" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M880,700 L880,646" fill="none" stroke="#111" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="902" y="675" font-size="13" fill="#111" text-anchor="middle" dominant-baseline="middle">Yes</text>
+<path d="M970,740 L1030,740 L1030,300 L340,300" fill="none" stroke="#111" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="998" y="728" font-size="13" fill="#111" text-anchor="middle" dominant-baseline="middle">No</text>
+<path d="M880,594 L880,545" fill="none" stroke="#111" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="1070" y="34" font-size="15" font-weight="bold" text-anchor="start">(b) Technology-specific POD check for one hypothetical event</text>
+<rect x="1045" y="50" width="640" height="770" rx="10" fill="none" stroke="#d33" stroke-width="1.5" stroke-dasharray="7,5"/>
+<rect x="1110.0" y="69.0" width="540" height="52" rx="6" fill="#eeeeee" stroke="#555" stroke-width="1.5"/>
+<text x="1380" y="86.9" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">Input: <tspan font-style="italic">Q</tspan>, <tspan font-style="italic">D</tspan>, <tspan font-style="italic">u</tspan>, event interval [<tspan font-style="italic">t</tspan>, <tspan font-style="italic">t</tspan>+<tspan font-style="italic">D</tspan>),</text>
+<text x="1380" y="103.1" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">list of technologies whose coverage overlaps the interval</text>
+<rect x="1230.0" y="150.0" width="300" height="40" rx="6" fill="#ffe9a3" stroke="#b58900" stroke-width="1.5"/>
+<text x="1380" y="170.0" text-anchor="middle" dominant-baseline="middle" font-size="14" fill="#111"><tspan font-style="italic">k</tspan> = first covering technology</text>
+<rect x="1200.0" y="212.0" width="360" height="66" rx="6" fill="#ffe9a3" stroke="#b58900" stroke-width="1.5"/>
+<text x="1380" y="228.9" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">POD<tspan baseline-shift="sub" font-size="10">k</tspan> = <tspan font-style="italic">f</tspan><tspan baseline-shift="sub" font-size="10">k</tspan>(<tspan font-style="italic">Q</tspan>, <tspan font-style="italic">u</tspan>) (wind-dependent curve, Table S2)</text>
+<text x="1380" y="245.0" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">or constant POD<tspan baseline-shift="sub" font-size="10">k</tspan> at the nominal MDL;</text>
+<text x="1380" y="261.1" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">a snapshot survey counts once per overlapping pass</text>
+<rect x="1270.0" y="305.0" width="220" height="40" rx="6" fill="#c9efc9" stroke="#2f8f2f" stroke-width="1.5"/>
+<text x="1380" y="325.0" text-anchor="middle" dominant-baseline="middle" font-size="14" fill="#111">Draw ξ<tspan baseline-shift="sub" font-size="10">k</tspan> ~ U(0, 1)</text>
+<polygon points="1380,378.0 1480.0,420 1380,462.0 1280.0,420" fill="#cfe6ff" stroke="#2b6cb0" stroke-width="1.5"/>
+<text x="1380" y="420.0" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">ξ<tspan baseline-shift="sub" font-size="10">k</tspan> < POD<tspan baseline-shift="sub" font-size="10">k</tspan> ?</text>
+<rect x="1450.0" y="494.0" width="200" height="52" rx="6" fill="#dfe8f3" stroke="#2b6cb0" stroke-width="1.5"/>
+<text x="1550" y="511.9" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">True negative:</text>
+<text x="1550" y="528.1" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">detected by <tspan font-style="italic">k</tspan></text>
+<rect x="1110.0" y="494.0" width="200" height="52" rx="6" fill="#f8d7da" stroke="#b03a2e" stroke-width="1.5"/>
+<text x="1210" y="511.9" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">False negative:</text>
+<text x="1210" y="528.1" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">missed by <tspan font-style="italic">k</tspan></text>
+<polygon points="1210,588.0 1315.0,630 1210,672.0 1105.0,630" fill="#cfe6ff" stroke="#2b6cb0" stroke-width="1.5"/>
+<text x="1210" y="621.9" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">Another covering</text>
+<text x="1210" y="638.1" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">technology?</text>
+<rect x="1095.0" y="714.0" width="230" height="52" rx="6" fill="#f8d7da" stroke="#b03a2e" stroke-width="1.5"/>
+<text x="1210" y="731.9" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">Missed by all covering technologies</text>
+<text x="1210" y="748.1" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">P = ∏<tspan baseline-shift="sub" font-size="10">k</tspan> (1 − POD<tspan baseline-shift="sub" font-size="10">k</tspan>)  (Eq. S1)</text>
+<rect x="1450.0" y="714.0" width="200" height="52" rx="6" fill="#dfe8f3" stroke="#2b6cb0" stroke-width="1.5"/>
+<text x="1550" y="731.9" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">Event detected:</text>
+<text x="1550" y="748.1" text-anchor="middle" dominant-baseline="middle" font-size="13" fill="#111">add nothing, advance clock</text>
+<path d="M1380,121 L1380,149" fill="none" stroke="#111" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M1380,190 L1380,211" fill="none" stroke="#111" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M1380,278 L1380,304" fill="none" stroke="#111" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M1380,345 L1380,377" fill="none" stroke="#111" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M1480,420 L1550,420 L1550,493" fill="none" stroke="#111" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="1515" y="408" font-size="13" fill="#111" text-anchor="middle" dominant-baseline="middle">Yes</text>
+<path d="M1280,420 L1210,420 L1210,493" fill="none" stroke="#111" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="1245" y="408" font-size="13" fill="#111" text-anchor="middle" dominant-baseline="middle">No</text>
+<path d="M1210,546 L1210,587" fill="none" stroke="#111" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M1210,672 L1210,713" fill="none" stroke="#111" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="1230" y="692" font-size="13" fill="#111" text-anchor="middle" dominant-baseline="middle">No</text>
+<path d="M1105,630 L1070,630 L1070,170 L1230,170" fill="none" stroke="#111" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="1062" y="600" font-size="13" fill="#111" text-anchor="end" dominant-baseline="middle">Yes:</text><text x="1062" y="616" font-size="13" fill="#111" text-anchor="end" dominant-baseline="middle">next <tspan font-style="italic">k</tspan></text>
+<path d="M1550,546 L1550,713" fill="none" stroke="#111" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="1380" y="800" font-size="12" text-anchor="middle" fill="#444">Return "missed" (panel a adds <tspan font-style="italic">Q</tspan> × <tspan font-style="italic">D</tspan>) or "detected" (nothing added); the clock advances by <tspan font-style="italic">D</tspan> in both cases</text>
+</svg>

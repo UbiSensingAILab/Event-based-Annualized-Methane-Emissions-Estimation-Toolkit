@@ -1,0 +1,4 @@
+UE rate source,N_outer,PRE_Tg_median,UE_Tg_median,total_Tg_median,total_Tg_q2.5,total_Tg_q97.5,change_vs_baseline_pct
+pooled basin-wide rate distribution (baseline),2000,1.2633,0.8155,2.0791,1.924,2.2883,0.0
+source-specific rates (own observed rates only),2000,1.2635,0.7169,1.98,1.8589,2.1186,-4.8
+no extrapolation (PRE events only),2000,1.2633,0.0,1.2633,1.2236,1.306,-39.2

@@ -1,0 +1,6 @@
+N_outer,seconds,total_Tg_median,total_Tg_q2.5,total_Tg_q97.5,MC_SE_of_median_Tg,machine
+500,2.0,2.0749,1.9191,2.2868,0.0053,"arm64, 12 cores, python 3.13.9"
+1000,3.8,2.0778,1.9141,2.2881,0.0037,"arm64, 12 cores, python 3.13.9"
+2000,7.9,2.0806,1.9182,2.2801,0.0026,"arm64, 12 cores, python 3.13.9"
+5000,18.8,2.082,1.9185,2.2841,0.0017,"arm64, 12 cores, python 3.13.9"
+10000,37.2,2.0816,1.9208,2.2855,0.0012,"arm64, 12 cores, python 3.13.9"

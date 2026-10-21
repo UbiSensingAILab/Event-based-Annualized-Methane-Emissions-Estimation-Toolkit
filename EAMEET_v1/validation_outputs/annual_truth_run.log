@@ -1,0 +1,596 @@
+persistent   cms_full      rep  0  truth     75.9 t  est      8.2 [3, 3280]  base      8.2  0.2s
+persistent   cms_full      rep  1  truth     86.1 t  est     92.0 [51, 1995]  base     92.0  0.1s
+persistent   cms_full      rep  2  truth    213.2 t  est    195.1 [102, 1520]  base    195.1  0.1s
+persistent   cms_full      rep  3  truth     29.8 t  est     48.0 [13, 2760]  base     13.6  0.1s
+persistent   cms_full      rep  4  truth     43.0 t  est     41.4 [21, 3053]  base     40.3  0.1s
+persistent   cms_full      rep  5  truth     79.2 t  est     20.7 [7, 2963]  base     20.7  0.1s
+persistent   cms_full      rep  6  truth     89.3 t  est     71.2 [34, 1371]  base     71.2  0.1s
+persistent   cms_full      rep  7  truth     60.7 t  est     50.1 [29, 1588]  base     50.1  0.1s
+persistent   cms_full      rep  8  truth     87.3 t  est    140.8 [57, 1295]  base    140.8  0.1s
+persistent   cms_full      rep  9  truth     38.4 t  est     56.0 [21, 2836]  base     56.0  0.1s
+persistent   cms_full      rep 10  truth     76.5 t  est     45.5 [16, 1926]  base     45.5  0.1s
+persistent   cms_full      rep 11  truth    179.9 t  est    288.3 [138, 2001]  base    288.3  0.1s
+persistent   cms_full      rep 12  truth    104.0 t  est     25.2 [14, 2243]  base     25.2  0.1s
+persistent   cms_full      rep 13  truth     86.8 t  est     67.8 [33, 1451]  base     67.8  0.2s
+persistent   cms_full      rep 14  truth    117.4 t  est    196.1 [104, 3614]  base    196.1  0.1s
+persistent   cms_full      rep 15  truth     40.0 t  est      0.0 [0, 0]  base      0.0  0.0s
+persistent   cms_full      rep 16  truth    145.2 t  est     63.6 [35, 1594]  base     63.6  0.1s
+persistent   cms_full      rep 17  truth     31.0 t  est      5.5 [2, 4028]  base      5.5  0.1s
+persistent   cms_full      rep 18  truth    280.7 t  est     19.6 [7, 3825]  base     19.2  0.1s
+persistent   cms_full      rep 19  truth     90.4 t  est     35.1 [16, 3211]  base     23.2  0.1s
+persistent   cms_campaign  rep  0  truth     75.9 t  est      0.0 [0, 0]  base      0.0  0.0s
+persistent   cms_campaign  rep  1  truth     86.1 t  est     24.6 [10, 2313]  base     20.9  0.1s
+persistent   cms_campaign  rep  2  truth    213.2 t  est    261.6 [176, 1100]  base    303.3  0.1s
+persistent   cms_campaign  rep  3  truth     29.8 t  est     20.6 [11, 1387]  base     17.0  0.1s
+persistent   cms_campaign  rep  4  truth     43.0 t  est     26.0 [11, 1374]  base     26.4  0.1s
+persistent   cms_campaign  rep  5  truth     79.2 t  est     22.0 [9, 1824]  base     18.7  0.1s
+persistent   cms_campaign  rep  6  truth     89.3 t  est     14.0 [7, 1694]  base      9.1  0.1s
+persistent   cms_campaign  rep  7  truth     60.7 t  est     57.4 [40, 949]  base     56.2  0.1s
+persistent   cms_campaign  rep  8  truth     87.3 t  est     98.7 [47, 1164]  base    106.8  0.1s
+persistent   cms_campaign  rep  9  truth     38.4 t  est      0.0 [0, 0]  base      0.0  0.0s
+persistent   cms_campaign  rep 10  truth     76.5 t  est      0.0 [0, 0]  base      0.0  0.0s
+persistent   cms_campaign  rep 11  truth    179.9 t  est    425.8 [243, 905]  base    495.4  0.1s
+persistent   cms_campaign  rep 12  truth    104.0 t  est     23.3 [10, 1134]  base     21.4  0.4s
+persistent   cms_campaign  rep 13  truth     86.8 t  est      0.0 [0, 0]  base      0.0  0.0s
+persistent   cms_campaign  rep 14  truth    117.4 t  est      0.0 [0, 0]  base      0.0  0.0s
+persistent   cms_campaign  rep 15  truth     40.0 t  est      0.0 [0, 0]  base      0.0  0.0s
+persistent   cms_campaign  rep 16  truth    145.2 t  est     32.2 [14, 1205]  base     29.1  0.2s
+persistent   cms_campaign  rep 17  truth     31.0 t  est      7.9 [3, 2023]  base      7.0  0.2s
+persistent   cms_campaign  rep 18  truth    280.7 t  est     38.4 [16, 1823]  base     33.0  0.2s
+persistent   cms_campaign  rep 19  truth     90.4 t  est      0.0 [0, 0]  base      0.0  0.0s
+persistent   cms_campaign_byclass rep  0  truth     75.9 t  est      0.0 [0, 0]  base      0.0  0.0s
+persistent   cms_campaign_byclass rep  1  truth     86.1 t  est     24.6 [10, 2313]  base     20.9  0.2s
+persistent   cms_campaign_byclass rep  2  truth    213.2 t  est    304.5 [201, 1144]  base    303.3  0.2s
+persistent   cms_campaign_byclass rep  3  truth     29.8 t  est     20.0 [11, 1386]  base     17.0  0.2s
+persistent   cms_campaign_byclass rep  4  truth     43.0 t  est     29.6 [12, 1377]  base     26.4  0.2s
+persistent   cms_campaign_byclass rep  5  truth     79.2 t  est     20.7 [9, 1823]  base     18.7  0.2s
+persistent   cms_campaign_byclass rep  6  truth     89.3 t  est     15.0 [8, 1695]  base      9.1  0.3s
+persistent   cms_campaign_byclass rep  7  truth     60.7 t  est     56.2 [30, 948]  base     56.2  0.2s
+persistent   cms_campaign_byclass rep  8  truth     87.3 t  est    120.0 [51, 1184]  base    106.8  0.2s
+persistent   cms_campaign_byclass rep  9  truth     38.4 t  est      0.0 [0, 0]  base      0.0  0.0s
+persistent   cms_campaign_byclass rep 10  truth     76.5 t  est      0.0 [0, 0]  base      0.0  0.0s
+persistent   cms_campaign_byclass rep 11  truth    179.9 t  est    509.5 [259, 981]  base    495.4  0.2s
+persistent   cms_campaign_byclass rep 12  truth    104.0 t  est     23.5 [10, 1135]  base     21.4  0.2s
+persistent   cms_campaign_byclass rep 13  truth     86.8 t  est      0.0 [0, 0]  base      0.0  0.0s
+persistent   cms_campaign_byclass rep 14  truth    117.4 t  est      0.0 [0, 0]  base      0.0  0.0s
+persistent   cms_campaign_byclass rep 15  truth     40.0 t  est      0.0 [0, 0]  base      0.0  0.0s
+persistent   cms_campaign_byclass rep 16  truth    145.2 t  est     30.5 [14, 1203]  base     29.1  0.2s
+persistent   cms_campaign_byclass rep 17  truth     31.0 t  est      8.3 [4, 2023]  base      7.0  0.2s
+persistent   cms_campaign_byclass rep 18  truth    280.7 t  est     38.2 [16, 1823]  base     33.0  0.2s
+persistent   cms_campaign_byclass rep 19  truth     90.4 t  est      0.0 [0, 0]  base      0.0  0.0s
+persistent   fly_monthly   rep  0  truth     75.9 t  est     79.0 [40, 136]  base     37.4  0.0s
+persistent   fly_monthly   rep  1  truth     86.1 t  est    106.1 [59, 175]  base     52.8  0.0s
+persistent   fly_monthly   rep  2  truth    213.2 t  est    323.6 [209, 411]  base    169.2  0.0s
+persistent   fly_monthly   rep  3  truth     29.8 t  est     71.5 [42, 118]  base     23.5  0.0s
+persistent   fly_monthly   rep  4  truth     43.0 t  est    125.9 [41, 328]  base     50.6  0.0s
+persistent   fly_monthly   rep  5  truth     79.2 t  est     87.8 [39, 189]  base     25.3  0.0s
+persistent   fly_monthly   rep  6  truth     89.3 t  est    123.7 [86, 190]  base     54.9  0.0s
+persistent   fly_monthly   rep  7  truth     60.7 t  est     53.0 [31, 80]  base     22.9  0.0s
+persistent   fly_monthly   rep  8  truth     87.3 t  est    173.5 [104, 234]  base     80.4  0.0s
+persistent   fly_monthly   rep  9  truth     38.4 t  est     46.5 [15, 116]  base     18.4  0.0s
+persistent   fly_monthly   rep 10  truth     76.5 t  est     37.7 [22, 78]  base     14.9  0.0s
+persistent   fly_monthly   rep 11  truth    179.9 t  est    288.9 [180, 400]  base    168.2  0.0s
+persistent   fly_monthly   rep 12  truth    104.0 t  est    180.5 [98, 259]  base    102.2  0.0s
+persistent   fly_monthly   rep 13  truth     86.8 t  est    108.0 [66, 157]  base     51.2  0.0s
+persistent   fly_monthly   rep 14  truth    117.4 t  est    241.3 [92, 486]  base    116.5  0.0s
+persistent   fly_monthly   rep 15  truth     40.0 t  est     45.1 [20, 81]  base     17.1  0.0s
+persistent   fly_monthly   rep 16  truth    145.2 t  est    166.4 [116, 273]  base     95.1  0.0s
+persistent   fly_monthly   rep 17  truth     31.0 t  est     10.6 [3, 26]  base      4.3  0.0s
+persistent   fly_monthly   rep 18  truth    280.7 t  est    367.7 [259, 466]  base    226.1  0.0s
+persistent   fly_monthly   rep 19  truth     90.4 t  est     51.3 [22, 109]  base     14.3  0.0s
+persistent   fly_bimonthly rep  0  truth     75.9 t  est     19.3 [11, 39]  base      7.1  0.0s
+persistent   fly_bimonthly rep  1  truth     86.1 t  est     53.4 [21, 115]  base     24.5  0.0s
+persistent   fly_bimonthly rep  2  truth    213.2 t  est    357.4 [207, 474]  base    211.9  0.0s
+persistent   fly_bimonthly rep  3  truth     29.8 t  est      0.0 [0, 0]  base      0.0  0.0s
+persistent   fly_bimonthly rep  4  truth     43.0 t  est      0.0 [0, 0]  base      0.0  0.0s
+persistent   fly_bimonthly rep  5  truth     79.2 t  est    146.3 [79, 272]  base     50.5  0.0s
+persistent   fly_bimonthly rep  6  truth     89.3 t  est    144.0 [61, 220]  base     76.3  0.0s
+persistent   fly_bimonthly rep  7  truth     60.7 t  est     73.7 [36, 106]  base     35.9  0.0s
+persistent   fly_bimonthly rep  8  truth     87.3 t  est    137.0 [73, 258]  base     46.6  0.0s
+persistent   fly_bimonthly rep  9  truth     38.4 t  est    112.4 [43, 244]  base     52.6  0.0s
+persistent   fly_bimonthly rep 10  truth     76.5 t  est     79.1 [46, 164]  base     29.5  0.0s
+persistent   fly_bimonthly rep 11  truth    179.9 t  est    295.8 [167, 390]  base    175.2  0.0s
+persistent   fly_bimonthly rep 12  truth    104.0 t  est    220.2 [124, 333]  base    104.3  0.0s
+persistent   fly_bimonthly rep 13  truth     86.8 t  est    129.9 [75, 199]  base     63.1  0.0s
+persistent   fly_bimonthly rep 14  truth    117.4 t  est    190.0 [72, 414]  base     88.1  0.0s
+persistent   fly_bimonthly rep 15  truth     40.0 t  est      0.0 [0, 0]  base      0.0  0.0s
+persistent   fly_bimonthly rep 16  truth    145.2 t  est    142.9 [78, 210]  base     66.7  0.0s
+persistent   fly_bimonthly rep 17  truth     31.0 t  est     18.7 [7, 42]  base      8.7  0.0s
+persistent   fly_bimonthly rep 18  truth    280.7 t  est    323.0 [191, 477]  base    163.7  0.0s
+persistent   fly_bimonthly rep 19  truth     90.4 t  est     97.7 [52, 186]  base     33.3  0.0s
+intermittent cms_full      rep  0  truth    120.4 t  est    148.5 [116, 203]  base    148.5  0.0s
+intermittent cms_full      rep  1  truth    137.0 t  est    108.1 [81, 829]  base    105.4  0.1s
+intermittent cms_full      rep  2  truth     90.3 t  est    423.6 [224, 1243]  base     55.2  1.8s
+intermittent cms_full      rep  3  truth     83.5 t  est    409.6 [197, 1220]  base     74.6  1.8s
+intermittent cms_full      rep  4  truth    136.9 t  est    114.0 [83, 213]  base    113.5  0.2s
+intermittent cms_full      rep  5  truth     72.2 t  est     97.3 [66, 150]  base     97.3  0.0s
+intermittent cms_full      rep  6  truth    134.4 t  est    170.1 [111, 269]  base    170.1  0.0s
+intermittent cms_full      rep  7  truth    105.4 t  est    397.4 [188, 1136]  base     80.5  1.5s
+intermittent cms_full      rep  8  truth     71.6 t  est     60.8 [44, 1158]  base     59.8  0.2s
+intermittent cms_full      rep  9  truth    169.0 t  est    236.9 [141, 1017]  base    235.7  0.2s
+intermittent cms_full      rep 10  truth     91.8 t  est    405.0 [200, 1284]  base     53.5  2.2s
+intermittent cms_full      rep 11  truth    107.9 t  est     88.9 [61, 136]  base     88.9  0.0s
+intermittent cms_full      rep 12  truth    120.9 t  est    417.6 [201, 1363]  base     77.5  2.0s
+intermittent cms_full      rep 13  truth     95.2 t  est     93.0 [72, 128]  base     93.0  0.0s
+intermittent cms_full      rep 14  truth     82.4 t  est    383.9 [179, 1180]  base     56.8  1.7s
+intermittent cms_full      rep 15  truth     61.1 t  est    382.8 [185, 1132]  base     32.8  2.5s
+intermittent cms_full      rep 16  truth    103.7 t  est    110.3 [74, 541]  base    109.6  0.2s
+intermittent cms_full      rep 17  truth    103.3 t  est    109.9 [77, 323]  base    109.2  0.2s
+intermittent cms_full      rep 18  truth    145.3 t  est    423.9 [222, 1111]  base     79.7  2.6s
+intermittent cms_full      rep 19  truth    128.3 t  est    464.9 [257, 1215]  base    116.1  2.5s
+intermittent cms_campaign  rep  0  truth    120.4 t  est    751.2 [103, 7069]  base    170.1  0.1s
+intermittent cms_campaign  rep  1  truth    137.0 t  est    635.9 [390, 1256]  base    132.5  0.3s
+intermittent cms_campaign  rep  2  truth     90.3 t  est    245.7 [113, 747]  base     52.6  1.5s
+intermittent cms_campaign  rep  3  truth     83.5 t  est    267.1 [135, 814]  base     75.1  1.4s
+intermittent cms_campaign  rep  4  truth    136.9 t  est    558.7 [85, 3589]  base    121.2  0.3s
+intermittent cms_campaign  rep  5  truth     72.2 t  est    436.0 [72, 2883]  base    110.8  0.1s
+intermittent cms_campaign  rep  6  truth    134.4 t  est    441.1 [49, 2083]  base     66.8  0.1s
+intermittent cms_campaign  rep  7  truth    105.4 t  est    248.2 [116, 851]  base     78.3  1.0s
+intermittent cms_campaign  rep  8  truth     71.6 t  est    461.4 [199, 1272]  base     44.8  0.3s
+intermittent cms_campaign  rep  9  truth    169.0 t  est    714.0 [211, 2380]  base    112.1  0.4s
+intermittent cms_campaign  rep 10  truth     91.8 t  est    229.5 [95, 950]  base     53.5  1.0s
+intermittent cms_campaign  rep 11  truth    107.9 t  est    272.5 [130, 818]  base     64.4  1.5s
+intermittent cms_campaign  rep 12  truth    120.9 t  est    247.6 [120, 1126]  base    107.5  0.8s
+intermittent cms_campaign  rep 13  truth     95.2 t  est    680.0 [74, 2847]  base     87.9  0.1s
+intermittent cms_campaign  rep 14  truth     82.4 t  est    219.5 [87, 893]  base     39.7  1.0s
+intermittent cms_campaign  rep 15  truth     61.1 t  est    242.2 [112, 733]  base     32.2  1.6s
+intermittent cms_campaign  rep 16  truth    103.7 t  est    484.8 [281, 970]  base    132.4  0.2s
+intermittent cms_campaign  rep 17  truth    103.3 t  est    288.9 [163, 932]  base     98.5  1.5s
+intermittent cms_campaign  rep 18  truth    145.3 t  est    318.3 [179, 904]  base    174.3  1.5s
+intermittent cms_campaign  rep 19  truth    128.3 t  est    243.7 [119, 835]  base     53.5  1.6s
+intermittent cms_campaign_byclass rep  0  truth    120.4 t  est    159.2 [108, 263]  base    170.1  0.0s
+intermittent cms_campaign_byclass rep  1  truth    137.0 t  est    132.7 [97, 361]  base    132.5  0.2s
+intermittent cms_campaign_byclass rep  2  truth     90.3 t  est    252.3 [119, 754]  base     52.6  1.5s
+intermittent cms_campaign_byclass rep  3  truth     83.5 t  est    268.0 [136, 815]  base     75.1  1.3s
+intermittent cms_campaign_byclass rep  4  truth    136.9 t  est    119.2 [83, 204]  base    121.2  0.2s
+intermittent cms_campaign_byclass rep  5  truth     72.2 t  est    109.4 [77, 171]  base    110.8  0.0s
+intermittent cms_campaign_byclass rep  6  truth    134.4 t  est     66.5 [47, 99]  base     66.8  0.0s
+intermittent cms_campaign_byclass rep  7  truth    105.4 t  est    245.7 [114, 848]  base     78.3  0.8s
+intermittent cms_campaign_byclass rep  8  truth     71.6 t  est     44.7 [33, 249]  base     44.8  0.2s
+intermittent cms_campaign_byclass rep  9  truth    169.0 t  est    113.2 [76, 540]  base    112.1  0.2s
+intermittent cms_campaign_byclass rep 10  truth     91.8 t  est    231.3 [97, 951]  base     53.5  1.4s
+intermittent cms_campaign_byclass rep 11  truth    107.9 t  est    267.9 [126, 808]  base     64.4  1.4s
+intermittent cms_campaign_byclass rep 12  truth    120.9 t  est    249.8 [121, 1130]  base    107.5  0.8s
+intermittent cms_campaign_byclass rep 13  truth     95.2 t  est     86.7 [66, 120]  base     87.9  0.0s
+intermittent cms_campaign_byclass rep 14  truth     82.4 t  est    200.0 [70, 870]  base     39.7  0.8s
+intermittent cms_campaign_byclass rep 15  truth     61.1 t  est    237.9 [108, 728]  base     32.2  1.5s
+intermittent cms_campaign_byclass rep 16  truth    103.7 t  est    132.7 [94, 350]  base    132.4  0.2s
+intermittent cms_campaign_byclass rep 17  truth    103.3 t  est    292.4 [166, 935]  base     98.5  1.6s
+intermittent cms_campaign_byclass rep 18  truth    145.3 t  est    368.2 [211, 968]  base    174.3  1.4s
+intermittent cms_campaign_byclass rep 19  truth    128.3 t  est    246.2 [121, 838]  base     53.5  1.5s
+intermittent fly_monthly   rep  0  truth    120.4 t  est    203.5 [73, 566]  base     92.6  0.0s
+intermittent fly_monthly   rep  1  truth    137.0 t  est    606.1 [425, 1308]  base    372.3  0.0s
+intermittent fly_monthly   rep  2  truth     90.3 t  est      0.0 [0, 0]  base      0.0  0.0s
+intermittent fly_monthly   rep  3  truth     83.5 t  est    976.8 [456, 2243]  base    299.1  0.0s
+intermittent fly_monthly   rep  4  truth    136.9 t  est    316.2 [125, 795]  base    108.5  0.0s
+intermittent fly_monthly   rep  5  truth     72.2 t  est      0.0 [0, 0]  base      0.0  0.0s
+intermittent fly_monthly   rep  6  truth    134.4 t  est   2087.7 [908, 3749]  base    786.6  0.0s
+intermittent fly_monthly   rep  7  truth    105.4 t  est      0.0 [0, 0]  base      0.0  0.0s
+intermittent fly_monthly   rep  8  truth     71.6 t  est      1.1 [1, 2]  base      0.3  0.0s
+intermittent fly_monthly   rep  9  truth    169.0 t  est      0.0 [0, 0]  base      0.0  0.0s
+intermittent fly_monthly   rep 10  truth     91.8 t  est    899.1 [388, 1967]  base    251.7  0.0s
+intermittent fly_monthly   rep 11  truth    107.9 t  est      0.0 [0, 0]  base      0.0  0.0s
+intermittent fly_monthly   rep 12  truth    120.9 t  est     96.8 [40, 214]  base     32.0  0.0s
+intermittent fly_monthly   rep 13  truth     95.2 t  est      0.0 [0, 0]  base      0.0  0.0s
+intermittent fly_monthly   rep 14  truth     82.4 t  est      0.0 [0, 0]  base      0.0  0.0s
+intermittent fly_monthly   rep 15  truth     61.1 t  est    454.9 [197, 980]  base    127.5  0.0s
+intermittent fly_monthly   rep 16  truth    103.7 t  est    459.3 [318, 1251]  base    190.3  0.0s
+intermittent fly_monthly   rep 17  truth    103.3 t  est    458.0 [198, 993]  base    128.3  0.0s
+intermittent fly_monthly   rep 18  truth    145.3 t  est      0.0 [0, 0]  base      0.0  0.0s
+intermittent fly_monthly   rep 19  truth    128.3 t  est      3.2 [2, 4]  base      1.5  0.0s
+intermittent fly_bimonthly rep  0  truth    120.4 t  est      0.0 [0, 0]  base      0.0  0.0s
+intermittent fly_bimonthly rep  1  truth    137.0 t  est      1.6 [1, 3]  base      0.6  0.0s
+intermittent fly_bimonthly rep  2  truth     90.3 t  est    770.5 [412, 1443]  base    264.1  0.0s
+intermittent fly_bimonthly rep  3  truth     83.5 t  est    274.9 [153, 526]  base     97.4  0.0s
+intermittent fly_bimonthly rep  4  truth    136.9 t  est      0.0 [0, 0]  base      0.0  0.0s
+intermittent fly_bimonthly rep  5  truth     72.2 t  est      0.0 [0, 0]  base      0.0  0.0s
+intermittent fly_bimonthly rep  6  truth    134.4 t  est     84.3 [31, 182]  base     38.8  0.0s
+intermittent fly_bimonthly rep  7  truth    105.4 t  est      0.0 [0, 0]  base      0.0  0.0s
+intermittent fly_bimonthly rep  8  truth     71.6 t  est      0.0 [0, 0]  base      0.0  0.0s
+intermittent fly_bimonthly rep  9  truth    169.0 t  est      0.0 [0, 0]  base      0.0  0.0s
+intermittent fly_bimonthly rep 10  truth     91.8 t  est   1239.0 [850, 2231]  base    554.8  0.0s
+intermittent fly_bimonthly rep 11  truth    107.9 t  est      0.0 [0, 0]  base      0.0  0.0s
+intermittent fly_bimonthly rep 12  truth    120.9 t  est      0.0 [0, 0]  base      0.0  0.0s
+intermittent fly_bimonthly rep 13  truth     95.2 t  est      0.0 [0, 0]  base      0.0  0.0s
+intermittent fly_bimonthly rep 14  truth     82.4 t  est      0.0 [0, 0]  base      0.0  0.0s
+intermittent fly_bimonthly rep 15  truth     61.1 t  est    171.3 [86, 313]  base     55.0  0.1s
+intermittent fly_bimonthly rep 16  truth    103.7 t  est      0.0 [0, 0]  base      0.0  0.0s
+intermittent fly_bimonthly rep 17  truth    103.3 t  est      0.0 [0, 0]  base      0.0  0.0s
+intermittent fly_bimonthly rep 18  truth    145.3 t  est      0.0 [0, 0]  base      0.0  0.0s
+intermittent fly_bimonthly rep 19  truth    128.3 t  est      2.0 [1, 4]  base      0.7  0.0s
+seasonal     cms_full      rep  0  truth    160.3 t  est    415.2 [204, 2255]  base    163.6  0.9s
+seasonal     cms_full      rep  1  truth    100.3 t  est    399.7 [176, 1356]  base    104.6  1.0s
+seasonal     cms_full      rep  2  truth     99.1 t  est     79.0 [41, 399]  base     78.8  0.2s
+seasonal     cms_full      rep  3  truth     70.1 t  est     74.7 [52, 114]  base     74.7  0.0s
+seasonal     cms_full      rep  4  truth    144.8 t  est    131.1 [73, 229]  base    131.1  0.0s
+seasonal     cms_full      rep  5  truth     55.7 t  est     77.9 [51, 124]  base     77.9  0.0s
+seasonal     cms_full      rep  6  truth     62.9 t  est    430.6 [218, 1035]  base     57.4  2.0s
+seasonal     cms_full      rep  7  truth     49.4 t  est    352.9 [154, 1120]  base     34.8  1.9s
+seasonal     cms_full      rep  8  truth     48.4 t  est    392.2 [185, 1063]  base     21.4  2.3s
+seasonal     cms_full      rep  9  truth     79.4 t  est    369.0 [149, 1547]  base     56.1  1.5s
+seasonal     cms_full      rep 10  truth     86.7 t  est    395.2 [175, 1706]  base    111.0  1.2s
+seasonal     cms_full      rep 11  truth    146.5 t  est    432.3 [201, 1351]  base     93.8  1.8s
+seasonal     cms_full      rep 12  truth     55.6 t  est    412.4 [214, 1007]  base     31.1  2.7s
+seasonal     cms_full      rep 13  truth     41.4 t  est    395.1 [213, 956]  base     25.0  3.0s
+seasonal     cms_full      rep 14  truth     70.2 t  est    378.3 [161, 1520]  base     59.1  1.6s
+seasonal     cms_full      rep 15  truth     50.2 t  est     50.4 [32, 81]  base     50.4  0.0s
+seasonal     cms_full      rep 16  truth     37.7 t  est     25.3 [19, 36]  base     25.3  0.0s
+seasonal     cms_full      rep 17  truth     59.6 t  est    358.0 [145, 1364]  base     48.6  1.2s
+seasonal     cms_full      rep 18  truth     60.1 t  est    414.0 [233, 930]  base     36.9  3.6s
+seasonal     cms_full      rep 19  truth     59.1 t  est    404.5 [198, 1095]  base     31.0  3.0s
+seasonal     cms_campaign  rep  0  truth    160.3 t  est    374.3 [218, 1186]  base    216.5  1.0s
+seasonal     cms_campaign  rep  1  truth    100.3 t  est    215.2 [79, 938]  base     75.8  0.8s
+seasonal     cms_campaign  rep  2  truth     99.1 t  est    468.8 [154, 1339]  base     90.2  0.3s
+seasonal     cms_campaign  rep  3  truth     70.1 t  est    767.6 [123, 3195]  base    101.7  0.1s
+seasonal     cms_campaign  rep  4  truth    144.8 t  est    861.8 [126, 3573]  base    117.9  0.1s
+seasonal     cms_campaign  rep  5  truth     55.7 t  est    490.7 [54, 3647]  base     58.9  0.1s
+seasonal     cms_campaign  rep  6  truth     62.9 t  est    257.0 [141, 650]  base     36.7  3.2s
+seasonal     cms_campaign  rep  7  truth     49.4 t  est    206.3 [73, 915]  base     46.1  0.8s
+seasonal     cms_campaign  rep  8  truth     48.4 t  est    231.9 [103, 742]  base     34.5  1.3s
+seasonal     cms_campaign  rep  9  truth     79.4 t  est    224.9 [99, 1101]  base     87.3  0.7s
+seasonal     cms_campaign  rep 10  truth     86.7 t  est    256.2 [112, 988]  base     97.7  0.7s
+seasonal     cms_campaign  rep 11  truth    146.5 t  est    276.0 [133, 1045]  base    135.1  0.8s
+seasonal     cms_campaign  rep 12  truth     55.6 t  est    253.0 [135, 761]  base     48.3  1.7s
+seasonal     cms_campaign  rep 13  truth     41.4 t  est    217.5 [102, 603]  base     26.4  1.5s
+seasonal     cms_campaign  rep 14  truth     70.2 t  est    224.4 [89, 1053]  base     80.0  1.0s
+seasonal     cms_campaign  rep 15  truth     50.2 t  est    261.8 [136, 710]  base     58.1  2.1s
+seasonal     cms_campaign  rep 16  truth     37.7 t  est    671.0 [31, 6106]  base     32.5  0.1s
+seasonal     cms_campaign  rep 17  truth     59.6 t  est    205.9 [66, 1001]  base     49.0  0.6s
+seasonal     cms_campaign  rep 18  truth     60.1 t  est    229.9 [116, 635]  base     15.9  2.7s
+seasonal     cms_campaign  rep 19  truth     59.1 t  est    238.9 [103, 801]  base     38.8  1.4s
+seasonal     cms_campaign_byclass rep  0  truth    160.3 t  est    367.5 [214, 1160]  base    216.5  0.5s
+seasonal     cms_campaign_byclass rep  1  truth    100.3 t  est    221.1 [84, 942]  base     75.8  0.7s
+seasonal     cms_campaign_byclass rep  2  truth     99.1 t  est     90.5 [60, 360]  base     90.2  0.2s
+seasonal     cms_campaign_byclass rep  3  truth     70.1 t  est    103.5 [68, 172]  base    101.7  0.0s
+seasonal     cms_campaign_byclass rep  4  truth    144.8 t  est    117.0 [82, 175]  base    117.9  0.0s
+seasonal     cms_campaign_byclass rep  5  truth     55.7 t  est     57.9 [39, 90]  base     58.9  0.0s
+seasonal     cms_campaign_byclass rep  6  truth     62.9 t  est    261.1 [145, 654]  base     36.7  3.0s
+seasonal     cms_campaign_byclass rep  7  truth     49.4 t  est    210.0 [76, 919]  base     46.1  0.8s
+seasonal     cms_campaign_byclass rep  8  truth     48.4 t  est    233.0 [104, 743]  base     34.5  1.4s
+seasonal     cms_campaign_byclass rep  9  truth     79.4 t  est    232.0 [104, 1107]  base     87.3  0.5s
+seasonal     cms_campaign_byclass rep 10  truth     86.7 t  est    262.6 [117, 988]  base     97.7  0.4s
+seasonal     cms_campaign_byclass rep 11  truth    146.5 t  est    309.4 [157, 1084]  base    135.1  0.6s
+seasonal     cms_campaign_byclass rep 12  truth     55.6 t  est    251.8 [134, 759]  base     48.3  1.1s
+seasonal     cms_campaign_byclass rep 13  truth     41.4 t  est    217.9 [102, 603]  base     26.4  1.2s
+seasonal     cms_campaign_byclass rep 14  truth     70.2 t  est    239.7 [101, 1068]  base     80.0  0.4s
+seasonal     cms_campaign_byclass rep 15  truth     50.2 t  est    266.9 [140, 715]  base     58.1  1.1s
+seasonal     cms_campaign_byclass rep 16  truth     37.7 t  est     31.7 [22, 48]  base     32.5  0.0s
+seasonal     cms_campaign_byclass rep 17  truth     59.6 t  est    214.6 [73, 1004]  base     49.0  0.5s
+seasonal     cms_campaign_byclass rep 18  truth     60.1 t  est    229.1 [115, 634]  base     15.9  1.5s
+seasonal     cms_campaign_byclass rep 19  truth     59.1 t  est    231.9 [97, 787]  base     38.8  1.4s
+seasonal     fly_monthly   rep  0  truth    160.3 t  est      2.4 [1, 4]  base      0.9  0.0s
+seasonal     fly_monthly   rep  1  truth    100.3 t  est      0.0 [0, 0]  base      0.0  0.0s
+seasonal     fly_monthly   rep  2  truth     99.1 t  est    277.1 [104, 774]  base    114.2  0.0s
+seasonal     fly_monthly   rep  3  truth     70.1 t  est     50.1 [35, 129]  base     22.8  0.0s
+seasonal     fly_monthly   rep  4  truth    144.8 t  est   1201.3 [681, 4870]  base    896.6  0.0s
+seasonal     fly_monthly   rep  5  truth     55.7 t  est      0.0 [0, 0]  base      0.0  0.0s
+seasonal     fly_monthly   rep  6  truth     62.9 t  est      0.0 [0, 0]  base      0.0  0.0s
+seasonal     fly_monthly   rep  7  truth     49.4 t  est      0.0 [0, 0]  base      0.0  0.0s
+seasonal     fly_monthly   rep  8  truth     48.4 t  est      1.6 [1, 3]  base      0.5  0.0s
+seasonal     fly_monthly   rep  9  truth     79.4 t  est      0.0 [0, 0]  base      0.0  0.0s
+seasonal     fly_monthly   rep 10  truth     86.7 t  est      0.0 [0, 0]  base      0.0  0.0s
+seasonal     fly_monthly   rep 11  truth    146.5 t  est      0.0 [0, 0]  base      0.0  0.0s
+seasonal     fly_monthly   rep 12  truth     55.6 t  est      1.5 [1, 3]  base      0.4  0.0s
+seasonal     fly_monthly   rep 13  truth     41.4 t  est      2.4 [2, 4]  base      1.0  0.1s
+seasonal     fly_monthly   rep 14  truth     70.2 t  est      0.0 [0, 0]  base      0.0  0.0s
+seasonal     fly_monthly   rep 15  truth     50.2 t  est      1.2 [0, 2]  base      0.3  0.1s
+seasonal     fly_monthly   rep 16  truth     37.7 t  est      0.0 [0, 0]  base      0.0  0.0s
+seasonal     fly_monthly   rep 17  truth     59.6 t  est     87.6 [39, 144]  base     41.2  0.0s
+seasonal     fly_monthly   rep 18  truth     60.1 t  est      2.2 [1, 4]  base      0.8  0.0s
+seasonal     fly_monthly   rep 19  truth     59.1 t  est      1.0 [0, 2]  base      0.3  0.0s
+seasonal     fly_bimonthly rep  0  truth    160.3 t  est    626.0 [440, 1178]  base    281.2  0.1s
+seasonal     fly_bimonthly rep  1  truth    100.3 t  est   1754.1 [911, 3129]  base    572.8  0.0s
+seasonal     fly_bimonthly rep  2  truth     99.1 t  est    653.8 [246, 1334]  base    285.7  0.0s
+seasonal     fly_bimonthly rep  3  truth     70.1 t  est      2.3 [1, 4]  base      0.8  0.1s
+seasonal     fly_bimonthly rep  4  truth    144.8 t  est      0.0 [0, 0]  base      0.0  0.0s
+seasonal     fly_bimonthly rep  5  truth     55.7 t  est      0.0 [0, 0]  base      0.0  0.0s
+seasonal     fly_bimonthly rep  6  truth     62.9 t  est      0.0 [0, 0]  base      0.0  0.0s
+seasonal     fly_bimonthly rep  7  truth     49.4 t  est      0.0 [0, 0]  base      0.0  0.0s
+seasonal     fly_bimonthly rep  8  truth     48.4 t  est    114.6 [66, 179]  base     57.4  0.1s
+seasonal     fly_bimonthly rep  9  truth     79.4 t  est      0.0 [0, 0]  base      0.0  0.0s
+seasonal     fly_bimonthly rep 10  truth     86.7 t  est      0.0 [0, 0]  base      0.0  0.0s
+seasonal     fly_bimonthly rep 11  truth    146.5 t  est      0.0 [0, 0]  base      0.0  0.0s
+seasonal     fly_bimonthly rep 12  truth     55.6 t  est      0.0 [0, 0]  base      0.0  0.0s
+seasonal     fly_bimonthly rep 13  truth     41.4 t  est      2.4 [1, 5]  base      0.8  0.0s
+seasonal     fly_bimonthly rep 14  truth     70.2 t  est   2169.7 [1178, 4155]  base    745.8  0.0s
+seasonal     fly_bimonthly rep 15  truth     50.2 t  est      0.0 [0, 0]  base      0.0  0.0s
+seasonal     fly_bimonthly rep 16  truth     37.7 t  est      0.0 [0, 0]  base      0.0  0.0s
+seasonal     fly_bimonthly rep 17  truth     59.6 t  est      3.1 [2, 4]  base      1.4  0.0s
+seasonal     fly_bimonthly rep 18  truth     60.1 t  est    724.2 [388, 1330]  base    246.5  0.0s
+seasonal     fly_bimonthly rep 19  truth     59.1 t  est      0.0 [0, 0]  base      0.0  0.0s
+concurrent   cms_full      rep  0  truth    264.6 t  est    339.1 [250, 822]  base    218.9  1.5s
+concurrent   cms_full      rep  1  truth    369.2 t  est    519.7 [407, 873]  base    432.2  0.9s
+concurrent   cms_full      rep  2  truth    269.4 t  est    325.8 [247, 777]  base    227.2  1.3s
+concurrent   cms_full      rep  3  truth    320.2 t  est    383.2 [302, 790]  base    288.7  1.0s
+concurrent   cms_full      rep  4  truth    432.3 t  est    629.4 [417, 2301]  base    382.2  0.9s
+concurrent   cms_full      rep  5  truth    295.7 t  est    402.9 [314, 873]  base    297.5  1.0s
+concurrent   cms_full      rep  6  truth    290.3 t  est    410.2 [308, 933]  base    288.5  1.1s
+concurrent   cms_full      rep  7  truth    299.7 t  est    378.6 [303, 777]  base    291.2  1.1s
+concurrent   cms_full      rep  8  truth    289.2 t  est    575.7 [364, 1842]  base    316.1  1.1s
+concurrent   cms_full      rep  9  truth    304.3 t  est    351.7 [275, 798]  base    263.6  0.9s
+concurrent   cms_full      rep 10  truth    330.3 t  est    376.0 [303, 815]  base    298.7  0.8s
+concurrent   cms_full      rep 11  truth    313.9 t  est    393.8 [309, 873]  base    293.0  1.2s
+concurrent   cms_full      rep 12  truth    378.4 t  est    431.5 [344, 904]  base    326.8  1.2s
+concurrent   cms_full      rep 13  truth    291.1 t  est    345.2 [267, 810]  base    250.7  1.1s
+concurrent   cms_full      rep 14  truth    380.1 t  est    459.7 [372, 951]  base    372.9  1.1s
+concurrent   cms_full      rep 15  truth    308.4 t  est    407.2 [331, 783]  base    329.6  1.3s
+concurrent   cms_full      rep 16  truth    373.4 t  est    441.9 [357, 855]  base    345.3  1.0s
+concurrent   cms_full      rep 17  truth    337.1 t  est    404.2 [333, 709]  base    326.6  0.9s
+concurrent   cms_full      rep 18  truth    291.9 t  est    363.3 [285, 857]  base    268.9  1.1s
+concurrent   cms_full      rep 19  truth    285.8 t  est    365.8 [287, 785]  base    278.8  0.9s
+concurrent   cms_campaign  rep  0  truth    264.6 t  est    282.6 [223, 661]  base    230.3  0.8s
+concurrent   cms_campaign  rep  1  truth    369.2 t  est    300.6 [245, 612]  base    277.6  0.8s
+concurrent   cms_campaign  rep  2  truth    269.4 t  est    295.2 [239, 617]  base    222.5  0.8s
+concurrent   cms_campaign  rep  3  truth    320.2 t  est    298.4 [243, 609]  base    249.1  0.7s
+concurrent   cms_campaign  rep  4  truth    432.3 t  est    386.3 [273, 1430]  base    258.2  0.6s
+concurrent   cms_campaign  rep  5  truth    295.7 t  est    334.3 [277, 655]  base    291.4  0.6s
+concurrent   cms_campaign  rep  6  truth    290.3 t  est    348.5 [279, 708]  base    304.5  0.9s
+concurrent   cms_campaign  rep  7  truth    299.7 t  est    326.9 [230, 725]  base    349.9  0.5s
+concurrent   cms_campaign  rep  8  truth    289.2 t  est    452.3 [328, 1337]  base    322.8  0.6s
+concurrent   cms_campaign  rep  9  truth    304.3 t  est    287.9 [236, 609]  base    228.1  0.5s
+concurrent   cms_campaign  rep 10  truth    330.3 t  est    324.6 [222, 746]  base    327.3  0.5s
+concurrent   cms_campaign  rep 11  truth    313.9 t  est    364.2 [304, 680]  base    334.2  0.6s
+concurrent   cms_campaign  rep 12  truth    378.4 t  est    360.9 [297, 625]  base    315.4  0.7s
+concurrent   cms_campaign  rep 13  truth    291.1 t  est    285.6 [189, 661]  base    265.9  0.6s
+concurrent   cms_campaign  rep 14  truth    380.1 t  est    356.9 [295, 722]  base    318.7  0.8s
+concurrent   cms_campaign  rep 15  truth    308.4 t  est    337.2 [282, 620]  base    300.4  0.7s
+concurrent   cms_campaign  rep 16  truth    373.4 t  est    393.0 [333, 719]  base    354.3  0.6s
+concurrent   cms_campaign  rep 17  truth    337.1 t  est    305.7 [216, 695]  base    310.2  0.6s
+concurrent   cms_campaign  rep 18  truth    291.9 t  est    309.5 [256, 565]  base    261.3  0.6s
+concurrent   cms_campaign  rep 19  truth    285.8 t  est    314.4 [250, 668]  base    266.1  0.7s
+concurrent   cms_campaign_byclass rep  0  truth    264.6 t  est    288.7 [225, 671]  base    230.3  0.8s
+concurrent   cms_campaign_byclass rep  1  truth    369.2 t  est    319.8 [252, 636]  base    277.6  0.6s
+concurrent   cms_campaign_byclass rep  2  truth    269.4 t  est    277.3 [222, 598]  base    222.5  0.7s
+concurrent   cms_campaign_byclass rep  3  truth    320.2 t  est    300.3 [241, 614]  base    249.1  0.7s
+concurrent   cms_campaign_byclass rep  4  truth    432.3 t  est    373.6 [262, 1417]  base    258.2  0.6s
+concurrent   cms_campaign_byclass rep  5  truth    295.7 t  est    338.6 [278, 661]  base    291.4  0.6s
+concurrent   cms_campaign_byclass rep  6  truth    290.3 t  est    367.2 [285, 730]  base    304.5  0.7s
+concurrent   cms_campaign_byclass rep  7  truth    299.7 t  est    379.8 [309, 658]  base    349.9  0.7s
+concurrent   cms_campaign_byclass rep  8  truth    289.2 t  est    455.1 [331, 1340]  base    322.8  0.5s
+concurrent   cms_campaign_byclass rep  9  truth    304.3 t  est    275.1 [226, 595]  base    228.1  0.5s
+concurrent   cms_campaign_byclass rep 10  truth    330.3 t  est    363.5 [304, 655]  base    327.3  0.4s
+concurrent   cms_campaign_byclass rep 11  truth    313.9 t  est    377.2 [308, 695]  base    334.2  0.5s
+concurrent   cms_campaign_byclass rep 12  truth    378.4 t  est    361.8 [283, 639]  base    315.4  0.5s
+concurrent   cms_campaign_byclass rep 13  truth    291.1 t  est    302.2 [259, 558]  base    265.9  0.5s
+concurrent   cms_campaign_byclass rep 14  truth    380.1 t  est    374.3 [299, 743]  base    318.7  0.5s
+concurrent   cms_campaign_byclass rep 15  truth    308.4 t  est    345.3 [285, 630]  base    300.4  0.5s
+concurrent   cms_campaign_byclass rep 16  truth    373.4 t  est    402.8 [334, 731]  base    354.3  0.5s
+concurrent   cms_campaign_byclass rep 17  truth    337.1 t  est    353.0 [293, 626]  base    310.2  0.5s
+concurrent   cms_campaign_byclass rep 18  truth    291.9 t  est    306.3 [251, 562]  base    261.3  0.5s
+concurrent   cms_campaign_byclass rep 19  truth    285.8 t  est    320.8 [250, 683]  base    266.1  0.5s
+concurrent   fly_monthly   rep  0  truth    264.6 t  est    423.9 [346, 502]  base    339.5  0.1s
+concurrent   fly_monthly   rep  1  truth    369.2 t  est    677.8 [493, 1099]  base    371.2  0.0s
+concurrent   fly_monthly   rep  2  truth    269.4 t  est    233.0 [178, 301]  base    201.3  0.1s
+concurrent   fly_monthly   rep  3  truth    320.2 t  est    512.5 [428, 595]  base    354.6  0.0s
+concurrent   fly_monthly   rep  4  truth    432.3 t  est    447.8 [300, 680]  base    257.9  0.0s
+concurrent   fly_monthly   rep  5  truth    295.7 t  est    394.0 [245, 558]  base    212.9  0.0s
+concurrent   fly_monthly   rep  6  truth    290.3 t  est    374.9 [249, 657]  base    225.0  0.0s
+concurrent   fly_monthly   rep  7  truth    299.7 t  est    646.4 [514, 1059]  base    345.5  0.0s
+concurrent   fly_monthly   rep  8  truth    289.2 t  est    486.2 [396, 576]  base    419.5  0.0s
+concurrent   fly_monthly   rep  9  truth    304.3 t  est    489.7 [351, 638]  base    251.7  0.0s
+concurrent   fly_monthly   rep 10  truth    330.3 t  est    566.7 [411, 819]  base    336.0  0.0s
+concurrent   fly_monthly   rep 11  truth    313.9 t  est    472.4 [359, 778]  base    294.2  0.0s
+concurrent   fly_monthly   rep 12  truth    378.4 t  est    781.3 [543, 1106]  base    583.6  0.0s
+concurrent   fly_monthly   rep 13  truth    291.1 t  est    331.1 [218, 422]  base    181.9  0.0s
+concurrent   fly_monthly   rep 14  truth    380.1 t  est    277.0 [223, 349]  base    151.6  0.0s
+concurrent   fly_monthly   rep 15  truth    308.4 t  est    325.9 [257, 409]  base    189.1  0.0s
+/opt/homebrew/anaconda3/lib/python3.13/site-packages/scipy/stats/_continuous_distns.py:2814: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  s = stats.skew(data)
+concurrent   fly_monthly   rep 16  truth    373.4 t  est   1091.2 [852, 2020]  base    671.0  5.1s
+concurrent   fly_monthly   rep 17  truth    337.1 t  est    435.5 [341, 571]  base    211.3  0.0s
+concurrent   fly_monthly   rep 18  truth    291.9 t  est    469.7 [370, 650]  base    290.7  0.0s
+/opt/homebrew/anaconda3/lib/python3.13/site-packages/scipy/stats/_continuous_distns.py:2814: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  s = stats.skew(data)
+concurrent   fly_monthly   rep 19  truth    285.8 t  est    662.9 [576, 758]  base    422.7  5.5s
+concurrent   fly_bimonthly rep  0  truth    264.6 t  est    432.8 [156, 928]  base    194.5  0.0s
+concurrent   fly_bimonthly rep  1  truth    369.2 t  est    638.5 [439, 815]  base    461.2  0.0s
+concurrent   fly_bimonthly rep  2  truth    269.4 t  est    485.5 [300, 619]  base    361.2  0.0s
+concurrent   fly_bimonthly rep  3  truth    320.2 t  est    515.2 [431, 599]  base    375.7  0.0s
+concurrent   fly_bimonthly rep  4  truth    432.3 t  est    402.0 [303, 514]  base    360.0  0.0s
+concurrent   fly_bimonthly rep  5  truth    295.7 t  est    612.6 [309, 807]  base    377.1  0.0s
+concurrent   fly_bimonthly rep  6  truth    290.3 t  est    417.8 [294, 592]  base    177.1  0.0s
+concurrent   fly_bimonthly rep  7  truth    299.7 t  est    126.7 [67, 186]  base     60.9  0.0s
+concurrent   fly_bimonthly rep  8  truth    289.2 t  est    183.8 [92, 240]  base    112.2  0.0s
+concurrent   fly_bimonthly rep  9  truth    304.3 t  est     72.2 [41, 144]  base     26.2  0.0s
+concurrent   fly_bimonthly rep 10  truth    330.3 t  est    276.6 [162, 575]  base    103.2  0.0s
+concurrent   fly_bimonthly rep 11  truth    313.9 t  est    338.2 [247, 456]  base    212.5  0.0s
+concurrent   fly_bimonthly rep 12  truth    378.4 t  est    136.8 [84, 245]  base     77.5  0.0s
+concurrent   fly_bimonthly rep 13  truth    291.1 t  est    269.0 [207, 324]  base    185.1  0.0s
+concurrent   fly_bimonthly rep 14  truth    380.1 t  est    185.8 [114, 247]  base    108.3  0.0s
+concurrent   fly_bimonthly rep 15  truth    308.4 t  est    469.1 [297, 713]  base    212.4  0.0s
+concurrent   fly_bimonthly rep 16  truth    373.4 t  est    382.5 [303, 465]  base    255.9  0.0s
+concurrent   fly_bimonthly rep 17  truth    337.1 t  est     71.7 [30, 110]  base     37.4  0.0s
+concurrent   fly_bimonthly rep 18  truth    291.9 t  est    279.8 [215, 350]  base    238.4  0.0s
+concurrent   fly_bimonthly rep 19  truth    285.8 t  est    213.9 [143, 355]  base    141.9  0.0s
+renewal      cms_full      rep  0  truth     67.5 t  est    285.5 [114, 1259]  base     60.6  0.7s
+renewal      cms_full      rep  1  truth    125.2 t  est    393.6 [214, 1268]  base    170.0  0.6s
+renewal      cms_full      rep  2  truth     69.8 t  est    277.4 [116, 1300]  base     57.5  0.7s
+renewal      cms_full      rep  3  truth     72.6 t  est    296.0 [104, 1153]  base     49.4  0.8s
+renewal      cms_full      rep  4  truth     73.7 t  est    289.6 [126, 1057]  base     76.2  0.7s
+renewal      cms_full      rep  5  truth     69.7 t  est    296.7 [108, 1185]  base     46.4  0.7s
+renewal      cms_full      rep  6  truth     89.2 t  est    265.6 [108, 1203]  base     69.2  0.6s
+renewal      cms_full      rep  7  truth     71.7 t  est    305.5 [134, 1337]  base     69.2  0.7s
+renewal      cms_full      rep  8  truth    101.9 t  est    296.8 [133, 1311]  base     83.2  0.6s
+renewal      cms_full      rep  9  truth     74.7 t  est    313.7 [136, 1297]  base     78.5  0.6s
+renewal      cms_full      rep 10  truth     65.2 t  est    285.6 [115, 1181]  base     51.2  0.7s
+renewal      cms_full      rep 11  truth    109.8 t  est    337.0 [157, 1462]  base    104.3  0.8s
+renewal      cms_full      rep 12  truth     81.8 t  est    307.0 [121, 1212]  base     65.2  0.7s
+renewal      cms_full      rep 13  truth     76.5 t  est    328.7 [149, 1305]  base     95.5  0.6s
+renewal      cms_full      rep 14  truth    101.8 t  est    328.9 [148, 1525]  base    105.9  0.7s
+renewal      cms_full      rep 15  truth     55.0 t  est    335.4 [136, 1198]  base     74.1  0.8s
+renewal      cms_full      rep 16  truth     80.2 t  est    320.4 [140, 1333]  base     54.2  0.9s
+renewal      cms_full      rep 17  truth     73.4 t  est    302.5 [117, 1308]  base     65.7  0.7s
+renewal      cms_full      rep 18  truth    107.7 t  est    318.6 [144, 1023]  base     99.9  0.7s
+renewal      cms_full      rep 19  truth     76.8 t  est    293.4 [114, 1310]  base     66.6  0.6s
+renewal      cms_campaign  rep  0  truth     67.5 t  est    185.8 [92, 858]  base     80.2  0.4s
+renewal      cms_campaign  rep  1  truth    125.2 t  est    320.3 [204, 826]  base    250.9  0.5s
+renewal      cms_campaign  rep  2  truth     69.8 t  est    169.3 [73, 810]  base     57.8  0.5s
+renewal      cms_campaign  rep  3  truth     72.6 t  est    180.0 [84, 828]  base     49.3  0.6s
+renewal      cms_campaign  rep  4  truth     73.7 t  est    176.2 [83, 827]  base     66.1  0.5s
+renewal      cms_campaign  rep  5  truth     69.7 t  est    182.3 [88, 805]  base     59.7  0.5s
+renewal      cms_campaign  rep  6  truth     89.2 t  est    174.6 [99, 805]  base     74.8  0.4s
+renewal      cms_campaign  rep  7  truth     71.7 t  est    191.7 [83, 887]  base     53.0  0.6s
+renewal      cms_campaign  rep  8  truth    101.9 t  est    181.3 [88, 971]  base     71.5  0.5s
+renewal      cms_campaign  rep  9  truth     74.7 t  est    198.4 [83, 792]  base     51.5  0.7s
+renewal      cms_campaign  rep 10  truth     65.2 t  est    179.1 [70, 799]  base     45.9  0.7s
+renewal      cms_campaign  rep 11  truth    109.8 t  est    187.8 [75, 919]  base     42.7  0.8s
+renewal      cms_campaign  rep 12  truth     81.8 t  est    176.4 [70, 863]  base     55.1  0.5s
+renewal      cms_campaign  rep 13  truth     76.5 t  est    163.6 [68, 805]  base     53.1  0.5s
+renewal      cms_campaign  rep 14  truth    101.8 t  est    192.4 [94, 906]  base     78.3  0.5s
+renewal      cms_campaign  rep 15  truth     55.0 t  est    188.2 [82, 906]  base     67.7  0.6s
+renewal      cms_campaign  rep 16  truth     80.2 t  est    190.6 [91, 841]  base     73.4  0.5s
+renewal      cms_campaign  rep 17  truth     73.4 t  est    178.5 [80, 853]  base     59.8  0.5s
+renewal      cms_campaign  rep 18  truth    107.7 t  est    204.1 [110, 731]  base    102.9  0.5s
+renewal      cms_campaign  rep 19  truth     76.8 t  est    165.6 [66, 833]  base     41.5  1.2s
+renewal      cms_campaign_byclass rep  0  truth     67.5 t  est    188.4 [94, 860]  base     80.2  0.9s
+renewal      cms_campaign_byclass rep  1  truth    125.2 t  est    374.7 [233, 905]  base    250.9  0.9s
+renewal      cms_campaign_byclass rep  2  truth     69.8 t  est    169.9 [73, 810]  base     57.8  0.6s
+renewal      cms_campaign_byclass rep  3  truth     72.6 t  est    161.6 [67, 808]  base     49.3  0.7s
+renewal      cms_campaign_byclass rep  4  truth     73.7 t  est    175.6 [83, 826]  base     66.1  0.6s
+renewal      cms_campaign_byclass rep  5  truth     69.7 t  est    170.0 [77, 792]  base     59.7  0.5s
+renewal      cms_campaign_byclass rep  6  truth     89.2 t  est    151.3 [80, 780]  base     74.8  0.4s
+renewal      cms_campaign_byclass rep  7  truth     71.7 t  est    190.6 [81, 886]  base     53.0  0.6s
+renewal      cms_campaign_byclass rep  8  truth    101.9 t  est    174.8 [83, 963]  base     71.5  0.5s
+renewal      cms_campaign_byclass rep  9  truth     74.7 t  est    191.6 [76, 785]  base     51.5  0.6s
+renewal      cms_campaign_byclass rep 10  truth     65.2 t  est    180.8 [72, 801]  base     45.9  0.6s
+renewal      cms_campaign_byclass rep 11  truth    109.8 t  est    184.5 [72, 915]  base     42.7  0.6s
+renewal      cms_campaign_byclass rep 12  truth     81.8 t  est    174.2 [68, 860]  base     55.1  0.5s
+renewal      cms_campaign_byclass rep 13  truth     76.5 t  est    158.8 [64, 800]  base     53.1  0.4s
+renewal      cms_campaign_byclass rep 14  truth    101.8 t  est    188.6 [91, 901]  base     78.3  0.5s
+renewal      cms_campaign_byclass rep 15  truth     55.0 t  est    195.3 [89, 914]  base     67.7  0.5s
+renewal      cms_campaign_byclass rep 16  truth     80.2 t  est    191.7 [92, 842]  base     73.4  0.5s
+renewal      cms_campaign_byclass rep 17  truth     73.4 t  est    176.2 [78, 850]  base     59.8  0.5s
+renewal      cms_campaign_byclass rep 18  truth    107.7 t  est    209.4 [113, 736]  base    102.9  0.5s
+renewal      cms_campaign_byclass rep 19  truth     76.8 t  est    161.9 [62, 829]  base     41.5  0.5s
+renewal      fly_monthly   rep  0  truth     67.5 t  est    165.4 [64, 334]  base     81.2  0.0s
+renewal      fly_monthly   rep  1  truth    125.2 t  est     80.7 [48, 132]  base     28.4  0.0s
+renewal      fly_monthly   rep  2  truth     69.8 t  est    224.7 [142, 446]  base    114.8  0.0s
+renewal      fly_monthly   rep  3  truth     72.6 t  est    463.1 [309, 1269]  base    195.9  0.0s
+renewal      fly_monthly   rep  4  truth     73.7 t  est    237.2 [183, 355]  base     97.6  0.0s
+renewal      fly_monthly   rep  5  truth     69.7 t  est     48.0 [29, 93]  base     17.7  0.0s
+renewal      fly_monthly   rep  6  truth     89.2 t  est    126.6 [98, 168]  base     65.9  0.0s
+renewal      fly_monthly   rep  7  truth     71.7 t  est      0.0 [0, 0]  base      0.0  0.0s
+renewal      fly_monthly   rep  8  truth    101.9 t  est     66.8 [29, 142]  base     19.0  0.0s
+renewal      fly_monthly   rep  9  truth     74.7 t  est     82.5 [56, 158]  base     35.9  0.0s
+renewal      fly_monthly   rep 10  truth     65.2 t  est     82.9 [56, 207]  base     35.0  0.0s
+renewal      fly_monthly   rep 11  truth    109.8 t  est      0.0 [0, 0]  base      0.0  0.0s
+renewal      fly_monthly   rep 12  truth     81.8 t  est    296.2 [177, 474]  base    131.2  0.0s
+renewal      fly_monthly   rep 13  truth     76.5 t  est    110.9 [69, 221]  base     40.8  0.0s
+renewal      fly_monthly   rep 14  truth    101.8 t  est    183.2 [107, 324]  base     64.5  0.0s
+renewal      fly_monthly   rep 15  truth     55.0 t  est      0.0 [0, 0]  base      0.0  0.0s
+renewal      fly_monthly   rep 16  truth     80.2 t  est    239.1 [153, 481]  base     90.4  0.0s
+renewal      fly_monthly   rep 17  truth     73.4 t  est     52.3 [35, 77]  base     20.1  0.0s
+renewal      fly_monthly   rep 18  truth    107.7 t  est    182.7 [106, 325]  base     64.5  0.0s
+renewal      fly_monthly   rep 19  truth     76.8 t  est     97.1 [51, 246]  base     45.7  0.0s
+renewal      fly_bimonthly rep  0  truth     67.5 t  est      0.0 [0, 0]  base      0.0  0.0s
+renewal      fly_bimonthly rep  1  truth    125.2 t  est    670.4 [348, 1196]  base    218.9  0.0s
+renewal      fly_bimonthly rep  2  truth     69.8 t  est     62.9 [25, 124]  base     25.5  0.0s
+renewal      fly_bimonthly rep  3  truth     72.6 t  est     76.1 [42, 146]  base     27.0  0.0s
+renewal      fly_bimonthly rep  4  truth     73.7 t  est    565.1 [236, 861]  base    295.9  0.0s
+renewal      fly_bimonthly rep  5  truth     69.7 t  est    310.8 [228, 448]  base    133.4  0.0s
+renewal      fly_bimonthly rep  6  truth     89.2 t  est    117.4 [98, 137]  base     60.1  0.0s
+renewal      fly_bimonthly rep  7  truth     71.7 t  est      0.0 [0, 0]  base      0.0  0.0s
+renewal      fly_bimonthly rep  8  truth    101.9 t  est    166.9 [89, 315]  base     56.8  0.0s
+renewal      fly_bimonthly rep  9  truth     74.7 t  est      0.0 [0, 0]  base      0.0  0.0s
+renewal      fly_bimonthly rep 10  truth     65.2 t  est      0.0 [0, 0]  base      0.0  0.0s
+renewal      fly_bimonthly rep 11  truth    109.8 t  est      0.0 [0, 0]  base      0.0  0.0s
+renewal      fly_bimonthly rep 12  truth     81.8 t  est     15.6 [8, 30]  base      5.3  0.0s
+renewal      fly_bimonthly rep 13  truth     76.5 t  est     61.6 [34, 118]  base     21.4  0.0s
+renewal      fly_bimonthly rep 14  truth    101.8 t  est    112.8 [61, 216]  base     38.8  0.0s
+renewal      fly_bimonthly rep 15  truth     55.0 t  est      0.0 [0, 0]  base      0.0  0.0s
+renewal      fly_bimonthly rep 16  truth     80.2 t  est     21.6 [11, 39]  base      7.2  0.0s
+renewal      fly_bimonthly rep 17  truth     73.4 t  est    111.8 [42, 253]  base     51.8  0.0s
+renewal      fly_bimonthly rep 18  truth    107.7 t  est    106.1 [57, 195]  base     36.1  0.0s
+renewal      fly_bimonthly rep 19  truth     76.8 t  est    669.8 [458, 1094]  base    498.6  0.1s
+/opt/homebrew/anaconda3/lib/python3.13/site-packages/scipy/stats/_continuous_distns.py:2814: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  s = stats.skew(data)
+    scenario               design  n  truth_t_median  bias_pct  mae_pct  rmse_pct  median_rel_err_pct  coverage_95  rel_width_median  baseline_bias_pct  baseline_mae_pct  replicates_without_detection  seconds_per_replicate
+  concurrent         cms_campaign 20         306.371     4.825   11.335    16.074               5.633         0.95             1.341             -8.991            12.965                             0                  0.676
+  concurrent cms_campaign_byclass 20         306.371     8.213   13.083    17.959               6.400         0.90             1.167             -8.991            12.965                             0                  0.574
+  concurrent             cms_full 20         306.371    29.462   29.462    34.706              24.953         0.65             1.729             -5.199             8.581                             0                  1.067
+  concurrent        fly_bimonthly 20         306.371     3.336   45.764    54.811              -5.580         0.45             0.517            -35.962            46.351                             0                  0.034
+  concurrent          fly_monthly 20         306.371    56.806   60.867    76.480              60.134         0.30             0.912             -1.513            29.860                             0                  0.569
+intermittent         cms_campaign 20         104.503   278.171  278.171   319.678             224.095         0.30             8.817            -16.686            30.929                             0                  0.812
+intermittent cms_campaign_byclass 20         104.503    88.336  102.942   129.367              99.319         0.50             5.401            -16.686            30.929                             0                  0.763
+intermittent             cms_full 20         104.503   151.743  159.021   230.709              37.465         0.55             5.790            -11.187            24.748                             0                  0.990
+intermittent        fly_bimonthly 20         104.503    43.880  197.339   343.809            -100.000         0.05             0.000            -43.340           114.678                            13                  0.015
+intermittent          fly_monthly 20         104.503   213.031  314.617   496.023             -58.716         0.15             0.730              9.517           121.095                             8                  0.018
+  persistent         cms_campaign 20          86.438   -57.395   74.638    81.992             -77.698         0.60             7.322            -55.807            79.804                             7                  0.103
+  persistent cms_campaign_byclass 20          86.438   -52.619   78.971    87.015             -78.196         0.60             7.315            -55.807            79.804                             7                  0.119
+  persistent             cms_full 20          86.438   -22.054   52.333    60.084             -21.079         0.95            23.760            -28.623            52.760                             1                  0.099
+  persistent        fly_bimonthly 20          86.438    17.255   62.655    76.901              18.197         0.70             1.243            -45.559            49.289                             3                  0.026
+  persistent          fly_monthly 20          86.438    36.592   53.830    71.802              23.808         0.80             1.244            -37.721            39.492                             0                  0.036
+     renewal         cms_campaign 20          75.609   136.066  136.066   141.891             140.716         0.30             9.842            -14.456            28.709                             0                  0.577
+     renewal cms_campaign_byclass 20          75.609   134.035  134.035   141.790             138.607         0.40             9.836            -14.456            28.709                             0                  0.574
+     renewal             cms_full 20          75.609   288.442  288.442   297.164             298.380         0.00            15.000             -6.984            17.774                             0                  0.685
+     renewal        fly_bimonthly 20          75.609    79.934  158.409   267.377              -5.687         0.35             1.194            -10.034           111.711                             6                  0.027
+     renewal          fly_monthly 20          75.609    72.883  115.858   168.416              34.587         0.50             2.008            -26.716            62.718                             3                  0.028
+    seasonal         cms_campaign 20          61.502   414.893  414.893   548.562             312.950         0.25            12.042             -9.355            23.193                             0                  1.048
+    seasonal cms_campaign_byclass 20          61.502   203.595  207.989   250.893             222.169         0.30             9.342             -9.355            23.193                             0                  0.761
+    seasonal             cms_full 20          61.502   343.853  350.116   442.431             360.354         0.25            12.897            -17.260            25.367                             0                  1.401
+    seasonal        fly_bimonthly 20          61.502   267.331  405.894   819.692            -100.000         0.00             0.000             31.587           171.031                            11                  0.020
+    seasonal          fly_monthly 20          61.502   -32.568  128.177   190.156             -98.370         0.10             0.023            -57.842           111.274                             9                  0.021
+    scenario             design  n  truth_t_median  bias_pct  mae_pct  rmse_pct  median_rel_err_pct  coverage_95  rel_width_median  baseline_bias_pct  baseline_mae_pct  replicates_without_detection  seconds_per_replicate
+  concurrent fly_bimonthly_cond 20         306.371   -10.502   43.198    52.480             -13.014         0.70             0.864            -35.962            46.351                             0                  0.041
+  concurrent   fly_monthly_cond 20         306.371    31.143   39.334    48.810              32.713         0.60             1.125             -1.513            29.860                             0                  0.581
+intermittent fly_bimonthly_cond 20         104.503   -11.535  142.769   201.225            -100.000         0.15             0.000            -43.340           114.678                            13                  0.013
+intermittent   fly_monthly_cond 20         104.503   121.894  226.090   341.544             -71.507         0.20             0.710              9.517           121.095                             8                  0.026
+  persistent fly_bimonthly_cond 20          86.438    -4.042   51.847    65.311              -5.517         0.80             1.341            -45.559            49.289                             3                  0.032
+  persistent   fly_monthly_cond 20          86.438    12.547   40.947    54.854               2.334         0.85             1.335            -37.721            39.492                             0                  0.051
+     renewal fly_bimonthly_cond 20          75.609    40.189  135.276   225.625             -33.601         0.45             1.202            -10.034           111.711                             6                  0.024
+     renewal   fly_monthly_cond 20          75.609    27.011   83.153   114.077              -4.035         0.55             1.944            -26.716            62.718                             3                  0.035
+    seasonal fly_bimonthly_cond 20          61.502   144.646  283.665   525.639            -100.000         0.15             0.000             31.587           171.031                            11                  0.017
+    seasonal   fly_monthly_cond 20          61.502   -30.865  132.754   213.558             -98.902         0.15             0.021            -57.842           111.274                             9                  0.021
+coverage sweep: 1 months done
+coverage sweep: 2 months done
+coverage sweep: 3 months done
+coverage sweep: 4 months done
+coverage sweep: 6 months done
+coverage sweep: 8 months done
+coverage sweep: 10 months done
+coverage sweep: 12 months done
+    scenario  months  n  bias_pct  mae_pct  coverage_95  rel_width_median  ue2_share
+intermittent       1 20   339.049  384.749         0.90             1.965    469.092
+intermittent       2 20   498.180  520.177         0.70             7.691    634.512
+intermittent       3 20   464.015  479.676         0.70             8.692    594.272
+intermittent       4 20   445.108  452.804         0.65            15.724    566.113
+intermittent       6 20   410.709  413.225         0.40            14.603    495.807
+intermittent       8 20   311.292  311.292         0.50            14.743    331.358
+intermittent      10 20   209.357  209.357         0.30             8.666    169.778
+intermittent      12 20    83.118   98.865         0.55             3.755      0.000
+  persistent       1 20   -63.114  103.747         0.15             0.000     17.884
+  persistent       2 20   -69.146   92.682         0.10             0.000     20.709
+  persistent       3 20   -73.075   87.370         0.30             0.000     14.517
+  persistent       4 20   -65.255   75.092         0.45             0.408     27.067
+  persistent       6 20   -42.341   55.423         0.75             9.371     40.820
+  persistent       8 20   -36.983   56.362         0.70            11.122     20.638
+  persistent      10 20   -33.056   62.154         0.70            12.507      6.671
+  persistent      12 20    -3.618   64.798         0.85            24.715      0.000
+     renewal       1 20   -19.726   52.085         0.85             2.214     49.133
+     renewal       2 20    12.293   47.574         0.80             3.892     57.452
+     renewal       3 20    32.888   48.593         0.75             4.970     52.698
+     renewal       4 20    55.345   61.888         0.75             6.308     47.170
+     renewal       6 20   112.279  112.279         0.60             8.549     36.103
+     renewal       8 20   163.607  163.607         0.35            10.004     24.094
+     renewal      10 20   218.901  218.901         0.20            11.607     10.977
+     renewal      12 20   282.423  282.423         0.10            14.154      0.000
+detection model 'flat POD 0.9 (default)' done
+detection model 'MDL-gated at true MDL (2 kg/h)' done
+detection model 'MDL-gated at 2.5x true MDL (5 kg/h)' done
+detection model 'flat POD 0.7' done
+detection model 'flat POD 0.9, site-specific component count (300 +/- 100)' done
+detection model 'MDL-gated at true MDL, site-specific component count (300 +/- 100)' done
+    scenario                                                              model  n  bias_pct  mae_pct  coverage_95  ue1_t_mean  measured_t_mean  rel_width_median
+intermittent                                MDL-gated at 2.5x true MDL (5 kg/h) 20   225.926  232.708         0.40     202.669           79.647             7.571
+intermittent                                     MDL-gated at true MDL (2 kg/h) 20   214.898  221.889         0.40     193.283           79.647             7.392
+intermittent MDL-gated at true MDL, site-specific component count (300 +/- 100) 20    12.703   23.763         0.75      25.670           79.647             1.134
+intermittent                                                       flat POD 0.7 20   722.784  727.953         0.35     617.634           79.647            16.634
+intermittent                                             flat POD 0.9 (default) 20   205.659  212.860         0.40     185.495           79.647             7.281
+intermittent          flat POD 0.9, site-specific component count (300 +/- 100) 20     6.449   18.474         0.90      20.409           79.647             1.105
+     renewal                                MDL-gated at 2.5x true MDL (5 kg/h) 20   321.786  321.786         0.00     262.332           81.813            14.022
+     renewal                                     MDL-gated at true MDL (2 kg/h) 20   304.767  304.767         0.00     248.660           81.813            13.821
+     renewal MDL-gated at true MDL, site-specific component count (300 +/- 100) 20    38.027   38.027         0.45      34.181           81.813             1.708
+     renewal                                                       flat POD 0.7 20  1069.614 1069.614         0.00     865.497           81.813            29.557
+     renewal                                             flat POD 0.9 (default) 20   290.125  290.125         0.00     236.817           81.813            13.880
+     renewal          flat POD 0.9, site-specific component count (300 +/- 100) 20    28.259   28.259         0.70      26.309           81.813             1.698
+{'reps': 20, 'mc': 1000, 'total_minutes': 9.729656330744426, 'machine': 'arm64, 12 cores', 'python': '3.13.9', 'numpy': '2.3.5', 'pandas': '2.3.3'}

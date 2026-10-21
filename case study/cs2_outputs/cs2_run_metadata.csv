@@ -1,0 +1,15 @@
+parameter,value
+measured_window,2024-01-01 .. 2024-07-31
+bootstrap_window,2024-08-01 .. 2024-12-31
+cms_dur_multiplier,"log-uniform(0.5, 2.0), symmetric about 1"
+pre_uncertainty_method,"per-PRE bounds x rate, aggregated in quadrature (RSS)"
+cms_point_estimate,"measured (1x); two-sided, M log-uniform 0.5x-2x"
+cms_tech,Qube
+bootstrap_fit,weibull
+mc_dur,2000
+mc_below_mdl,10000
+mc_bootstrap,10000
+seed_ue,99
+use_flyover_detection_time,True
+n_RE,10
+n_PRE,76
