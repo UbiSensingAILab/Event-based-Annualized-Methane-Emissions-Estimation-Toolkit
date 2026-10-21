@@ -1,11 +1,11 @@
-# Event-based Anualized Emission Estimation Toolkit (EAEET)
+# Event-based Annualized Emission Estimation Toolkit (EAMEET)
 
 A comprehensive web-based toolkit for estimating emissions using emission events. This application provides an interactive interface for converting emission observations to emission events, running Monte Carlo simulations, and analyzing emission data with uncertainty quantification.
 
 
 ## Overview
 
-The Event-based Anualized Emission Estimation Toolkit (EAEET) is designed to help researchers and analysts:
+The Event-based Annualized Emission Estimation Toolkit (EAMEET) is designed to help researchers and analysts:
 
 - Convert emission observations into structured emission events
 - Merge events using temporal and spatial relationships (Allen's Interval Algebra)
@@ -67,7 +67,7 @@ cd Emission-Estimation-Using-Emission-Events
 
 2. Navigate to the application directory:
 ```bash
-cd EAEET_v1
+cd EAMEET_v1
 ```
 
 3. Install required packages:
@@ -81,6 +81,7 @@ pip install -r requirements.txt
 - `pandas>=1.5.0` - Data manipulation
 - `numpy>=1.23.0` - Numerical computing
 - `scipy>=1.9.0` - Scientific computing
+- exact versions used for the manuscript: `EAMEET_v1/requirements-lock.txt`; release `EAMEET_v1/version.py`; run order `EAMEET_v1/RUNBOOK.md`
 - `plotly>=5.14.0` - Interactive visualizations
 - `netCDF4>=1.6.0` - For wind data support (NetCDF file reading)
 
@@ -90,8 +91,8 @@ pip install -r requirements.txt
 
 1. Start the Dash application:
 ```bash
-cd EAEET_v1
-python EAEET_dash_app.py
+cd EAMEET_v1
+python EAMEET_dash_app.py
 ```
 
 2. Open your web browser and navigate to:
@@ -136,8 +137,8 @@ http://localhost:8050
 
 ```
 Emission-Estimation-Using-Emission-Events/
-├── EAEET_v1/                          # Main application directory
-│   ├── EAEET_dash_app.py              # Main Dash application
+├── EAMEET_v1/                          # Main application directory
+│   ├── EAMEET_dash_app.py              # Main Dash application
 │   ├── components.py                  # UI components and layout
 │   ├── emission_event_converter.py    # Event conversion logic
 │   ├── simulations.py                  # Simulation functions
@@ -156,7 +157,7 @@ Emission-Estimation-Using-Emission-Events/
 
 ## Key Modules
 
-### `EAEET_dash_app.py`
+### `EAMEET_dash_app.py`
 Main application file containing:
 - Dash app initialization
 - Callback functions for user interactions
@@ -210,6 +211,17 @@ The repository includes two case studies demonstrating different use cases:
   - `Plot_results_case_study_2.ipynb`: Results plotting
 
 See `case study/README.md` for detailed documentation.
+
+## NetCDF data
+
+Two GFEI v3.0 (2020) inventory files are too large to store in this repository. Download them from the Harvard Dataverse release of the Global Fuel Exploitation Inventory (Scarpelli et al., 2025), [doi:10.7910/DVN/HH4EUM](https://doi.org/10.7910/DVN/HH4EUM), and save them in `case study/` under these names:
+
+| File | Direct download |
+| --- | --- |
+| `case study/Global_Fuel_Exploitation_Inventory_v3_2020_Oil_All.nc` | https://dataverse.harvard.edu/api/access/datafile/11828683 |
+| `case study/Global_Fuel_Exploitation_Inventory_v3_2020_Gas_All.nc` | https://dataverse.harvard.edu/api/access/datafile/11828512 |
+
+`cs1_gfei.py` reads those paths when comparing Case Study 1 with the inventory. The smaller relative-standard-deviation files and `EAMEET_v1/weather_permian.nc` are already in the repository.
 
 ## Data Requirements
 

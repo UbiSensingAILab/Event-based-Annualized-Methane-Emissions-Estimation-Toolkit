@@ -1,0 +1,45 @@
+    scenario  months  n  bias_pct  mae_pct  coverage_95  rel_width_median  ue2_share
+intermittent       1 20   332.316  388.281         0.55             1.049    469.092
+intermittent       2 20   487.875  527.231         0.55             7.659    634.512
+intermittent       3 20   447.182  487.064         0.50             8.607    594.272
+intermittent       4 20   424.903  446.033         0.65            15.629    566.113
+intermittent       6 20   382.055  394.612         0.50            14.573    495.807
+intermittent       8 20   265.956  276.131         0.65            14.743    331.358
+intermittent      10 20   153.784  157.725         0.55             7.152    169.778
+intermittent      12 20    25.563   41.475         0.75             1.677      0.000
+  persistent       1 20   -64.712  105.345         0.05             0.000     17.884
+  persistent       2 20   -69.146   92.682         0.10             0.000     20.709
+  persistent       3 20   -74.035   88.331         0.25             0.000     14.517
+  persistent       4 20   -66.022   75.858         0.45             0.350     27.067
+  persistent       6 20   -43.223   55.991         0.75             3.147     40.820
+  persistent       8 20   -40.825   54.692         0.70             3.460     20.638
+  persistent      10 20   -42.682   53.677         0.70             3.867      6.671
+  persistent      12 20   -22.038   49.802         0.85             7.080      0.000
+     renewal       1 20   -29.817   61.371         0.40             0.752     49.133
+     renewal       2 20    -8.569   54.340         0.70             1.301     57.452
+     renewal       3 20    -2.310   39.190         0.85             1.735     52.698
+     renewal       4 20     3.692   32.122         0.85             1.973     47.170
+     renewal       6 20    22.943   39.591         0.70             2.491     36.103
+     renewal       8 20    40.050   47.788         0.60             2.945     24.094
+     renewal      10 20    53.635   58.652         0.45             3.255     10.977
+     renewal      12 20    75.760   76.075         0.40             3.973      0.000
+detection model 'flat POD 0.9 (default)' done
+detection model 'MDL-gated at true MDL (2 kg/h)' done
+detection model 'MDL-gated at 2.5x true MDL (5 kg/h)' done
+detection model 'flat POD 0.7' done
+detection model 'flat POD 0.9, site-specific component count (300 +/- 100)' done
+detection model 'MDL-gated at true MDL, site-specific component count (300 +/- 100)' done
+    scenario                                                              model  n  bias_pct  mae_pct  coverage_95  ue1_t_mean  measured_t_mean  rel_width_median
+intermittent                                MDL-gated at 2.5x true MDL (5 kg/h) 20    60.025   67.963         0.40      65.000           79.647             2.198
+intermittent                                     MDL-gated at true MDL (2 kg/h) 20    51.642   60.267         0.40      57.971           79.647             2.150
+intermittent MDL-gated at true MDL, site-specific component count (300 +/- 100) 20    -6.638   18.994         0.85       9.585           79.647             0.619
+intermittent                                                       flat POD 0.7 20   187.685  194.071         0.35     171.579           79.647             4.640
+intermittent                                             flat POD 0.9 (default) 20    44.032   53.293         0.50      51.535           79.647             2.152
+intermittent          flat POD 0.9, site-specific component count (300 +/- 100) 20   -11.313   21.663         0.75       5.670           79.647             0.602
+     renewal                                MDL-gated at 2.5x true MDL (5 kg/h) 20   102.766  102.766         0.00      86.275           81.813             3.958
+     renewal                                     MDL-gated at true MDL (2 kg/h) 20    89.342   89.342         0.10      75.460           81.813             3.931
+     renewal MDL-gated at true MDL, site-specific component count (300 +/- 100) 20    11.990   16.946         0.80      13.272           81.813             0.691
+     renewal                                                       flat POD 0.7 20   293.903  293.903         0.00     240.441           81.813             8.223
+     renewal                                             flat POD 0.9 (default) 20    77.375   77.375         0.25      65.816           81.813             3.882
+     renewal          flat POD 0.9, site-specific component count (300 +/- 100) 20     4.606   14.119         0.90       7.309           81.813             0.684
+{'reps': 20, 'mc': 1000, 'total_minutes': 2.9113303343454997, 'machine': 'arm64, 12 cores', 'python': '3.13.9', 'numpy': '2.3.5', 'pandas': '2.3.3'}
